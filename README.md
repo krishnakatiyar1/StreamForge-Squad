@@ -118,6 +118,4 @@ This project originally used SQLite for all data (`db/campusconnect.sqlite`), in
 - Sessions use HTTP-only, `SameSite=Lax` cookies and expire automatically after 24 hours (enforced by a MongoDB TTL index).
 - Never commit your `.env` file — it contains your live database credentials. It is already excluded via `.gitignore`.
 
-## License
 
-Add your license here (e.g. MIT).
