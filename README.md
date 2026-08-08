@@ -1,6 +1,6 @@
 # CampusConnect
 
-A Node.js campus portal with account signup, login, and SQLite-backed sessions.
+A Node.js campus portal with account signup, login
 
 ## Requirements
 
