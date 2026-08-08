@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up | CampusConnect</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="auth-showcase">
+        <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+        <div>
+          <p class="kicker">JOIN THE COMMUNITY</p>
+          <h1>Your journey<br />starts <em>here.</em></h1>
+          <p>
+            Create your account and unlock your personalised campus experience.
+          </p>
+        </div>
+        <a class="back-home" href="/">← Return to home</a>
+      </section>
+      <section class="auth-form-area">
+        <div class="form-wrap">
+          <p class="kicker dark">CREATE ACCOUNT</p>
+          <h2>Join CampusConnect</h2>
+          <p class="form-intro">It takes less than a minute to get started.</p>
+          <form id="signup-form" novalidate>
+            <label
+              >Full name<input
+                id="signup-name"
+                type="text"
+                placeholder="Your full name"
+                required /></label
+            ><label
+              >College email<input
+                id="signup-email"
+                type="email"
+                placeholder="you@college.edu"
+                required /></label
+            ><label
+              >Password
+              <div class="password-field">
+                <input
+                  id="signup-password"
+                  type="password"
+                  placeholder="At least 8 characters"
+                  minlength="8"
+                  required
+                /><button class="password-toggle" type="button">Show</button>
+              </div></label
+            ><label class="check-label terms"
+              ><input id="terms" type="checkbox" required /> I agree to the
+              <a href="#">Terms of use</a> and
+              <a href="#">Privacy policy</a>.</label
+            >
+            <p class="form-message" aria-live="polite"></p>
+            <button class="submit-button" type="submit">
+              Create account <span>→</span>
+            </button>
+          </form>
+          <p class="switch-form">
+            Already have an account? <a id="login-link" href="/login">Log in</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      const form = document.querySelector("#signup-form"),
+        message = form.querySelector(".form-message");
+      const nameInput = document.querySelector("#signup-name");
+      const emailInput = document.querySelector("#signup-email");
+      const passwordInput = document.querySelector("#signup-password");
+      const termsInput = document.querySelector("#terms");
+      const submitButton = form.querySelector(".submit-button");
+      const requestedPath = new URLSearchParams(location.search).get("next");
+      const destination = requestedPath && requestedPath.startsWith("/") && !requestedPath.startsWith("//") ? requestedPath : "/";
+      document.querySelector("#login-link").href = `/login?next=${encodeURIComponent(destination)}`;
+      document.querySelector(".password-toggle").onclick = (event) => {
+        const input = passwordInput,
+          hidden = input.type === "password";
+        input.type = hidden ? "text" : "password";
+        event.currentTarget.textContent = hidden ? "Hide" : "Show";
+      };
+      form.onsubmit = async (event) => {
+        event.preventDefault();
+        const name = nameInput.value.trim(),
+          email = emailInput.value.trim().toLowerCase(),
+          password = passwordInput.value;
+        if (!name || !email || password.length < 8 || !termsInput.checked) {
+          message.textContent =
+            "Please complete all fields and use a password of at least 8 characters.";
+          return;
+        }
+        try {
+          submitButton.disabled = true;
+          submitButton.setAttribute("aria-busy", "true");
+          message.textContent = "Creating your account…";
+          const response = await fetch("/api/auth/signup", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ name, email, password }),
+            }),
+            data = await response.json().catch(() => ({}));
+          if (!response.ok) throw Error(data.error || "Unable to create your account. Please try again.");
+          message.textContent =
+            "Account created! Redirecting to your campus portal…";
+          message.classList.add("success");
+          setTimeout(() => (location.href = destination), 900);
+        } catch (error) {
+          message.textContent = error.message === "Failed to fetch" ? "Unable to reach the server. Run the site with npm start, then try again." : error.message;
+        } finally {
+          submitButton.disabled = false;
+          submitButton.removeAttribute("aria-busy");
+        }
+      };
+    </script>
+  </body>
+</html>

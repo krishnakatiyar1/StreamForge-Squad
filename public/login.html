@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in | CampusConnect</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-layout">
+      <section class="auth-showcase">
+        <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+        <div>
+          <p class="kicker">YOUR CAMPUS, CONNECTED</p>
+          <h1>Every campus<br />moment <em>matters.</em></h1>
+          <p>
+            One place to learn, connect and grow throughout your college
+            journey.
+          </p>
+        </div>
+        <a class="back-home" href="/">← Return to home</a>
+      </section>
+      <section class="auth-form-area">
+        <div class="form-wrap">
+          <p class="kicker dark">WELCOME BACK</p>
+          <h2>Log in to your account</h2>
+          <p class="form-intro">
+            Enter your details to continue to CampusConnect.
+          </p>
+          <p id="login-notice" class="auth-notice" hidden></p>
+          <form id="login-form" novalidate>
+            <label
+              >Email address<input
+                id="login-email"
+                type="email"
+                placeholder="you@college.edu"
+                required /></label
+            ><label
+              >Password
+              <div class="password-field">
+                <input
+                  id="login-password"
+                  type="password"
+                  placeholder="Enter your password"
+                  required
+                /><button class="password-toggle" type="button">Show</button>
+              </div></label
+            >
+            <div class="form-row">
+              <label class="check-label"
+                ><input type="checkbox" /> Remember me</label
+              ><a href="#">Forgot password?</a>
+            </div>
+            <p class="form-message" aria-live="polite"></p>
+            <button class="submit-button" type="submit">
+              Log in <span>→</span>
+            </button>
+          </form>
+          <p class="switch-form">
+            New to CampusConnect? <a id="signup-link" href="/signup">Create an account</a>
+          </p>
+        </div>
+      </section>
+    </main>
+    <script>
+      const form = document.querySelector("#login-form"),
+        message = form.querySelector(".form-message");
+      const emailInput = document.querySelector("#login-email");
+      const passwordInput = document.querySelector("#login-password");
+      const submitButton = form.querySelector(".submit-button");
+      const requestedPath = new URLSearchParams(location.search).get("next");
+      const destination = requestedPath && requestedPath.startsWith("/") && !requestedPath.startsWith("//") ? requestedPath : "/";
+      document.querySelector("#signup-link").href = `/signup?next=${encodeURIComponent(destination)}`;
+      if (destination === "/ai-assistant") {
+        const notice = document.querySelector("#login-notice");
+        notice.textContent = "To continue with Campus AI, please log in or create an account.";
+        notice.hidden = false;
+      }
+      document.querySelector(".password-toggle").onclick = (event) => {
+        const input = passwordInput,
+          hidden = input.type === "password";
+        input.type = hidden ? "text" : "password";
+        event.currentTarget.textContent = hidden ? "Hide" : "Show";
+      };
+      form.onsubmit = async (event) => {
+        event.preventDefault();
+        const email = emailInput.value.trim().toLowerCase(),
+          password = passwordInput.value;
+        if (!email || !password) {
+          message.textContent = "Enter your email address and password.";
+          return;
+        }
+        try {
+          submitButton.disabled = true;
+          submitButton.setAttribute("aria-busy", "true");
+          message.textContent = "Logging you in…";
+          const response = await fetch("/api/auth/login", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email, password }),
+            }),
+            data = await response.json().catch(() => ({}));
+          if (!response.ok) throw Error(data.error || "Unable to log in. Please try again.");
+          message.textContent = `Welcome back, ${data.user.name}! Redirecting…`;
+          message.classList.add("success");
+          setTimeout(() => (location.href = destination), 700);
+        } catch (error) {
+          message.textContent = error.message === "Failed to fetch" ? "Unable to reach the server. Run the site with npm start, then try again." : error.message;
+        } finally {
+          submitButton.disabled = false;
+          submitButton.removeAttribute("aria-busy");
+        }
+      };
+    </script>
+  </body>
+</html>

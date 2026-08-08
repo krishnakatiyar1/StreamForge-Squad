@@ -1,0 +1,19 @@
+{
+  "name": "streamforge-squad",
+  "version": "1.0.0",
+  "description": "A minimal Node.js starter project.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "mongodb": "^7.5.0"
+  }
+}

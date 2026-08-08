@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Campus AI | CampusConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="ai-page">
+    <header class="plain">
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a
+      ><a href="/">← Back to home</a>
+      <a id="logout-action" class="logout-link" href="/">Log out</a>
+    </header>
+    <main class="ai-main">
+      <section>
+        <span class="spark">✦</span>
+        <p class="kicker dark">CAMPUS AI ASSISTANT</p>
+        <h1>Your campus questions,<br /><em>answered instantly.</em></h1>
+        <p>
+          Ask anything about your college. Campus AI is here to help you
+          navigate every part of student life.
+        </p>
+      </section>
+      <section class="chat">
+        <div class="chat-top">
+          <b>✦</b>
+          <div><strong>Campus AI</strong><small>● Online now</small></div>
+          <span>•••</span>
+        </div>
+        <div class="chat-body">
+          <div class="message">
+            Hi! I’m Campus AI. What would you like to know today?<small
+              >Just now</small
+            >
+          </div>
+          <p class="try">TRY ASKING</p>
+          <button>When are the semester exams?</button
+          ><button>What courses are available?</button
+          ><button>Tell me about placement training</button
+          ><button>How can I pay my fees?</button>
+        </div>
+        <div class="input">
+          <input placeholder="Ask anything about your college..." /><button>
+            ↑
+          </button>
+        </div>
+        <p class="disclaimer">
+          Campus AI may make mistakes. Check important details with college
+          administration.
+        </p>
+      </section>
+    </main>
+    <section class="ai-info">
+      <div>
+        ◈
+        <h3>Instant answers</h3>
+        <p>Get helpful information whenever you need it.</p>
+      </div>
+      <div>
+        ⌁
+        <h3>Campus focused</h3>
+        <p>Made for student life and college information.</p>
+      </div>
+      <div>
+        ◌
+        <h3>Always learning</h3>
+        <p>Continuously improved with the latest campus updates.</p>
+      </div>
+    </section>
+    <script>
+      document.querySelector("#logout-action").onclick = async (event) => {
+        event.preventDefault();
+        await fetch("/api/auth/logout", { method: "POST" });
+        location.href = "/login?next=%2Fai-assistant";
+      };
+    </script>
+  </body>
+</html>

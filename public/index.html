@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>CampusConnect | College Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <nav>
+        <a href="#home">Home</a><a href="#services">Campus Life</a
+        ><a href="#about">About</a
+        ><a class="ai-nav" href="/ai-assistant">✦ AI Assistant</a>
+        <a id="auth-action" class="login-nav" href="/login">Log in</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="kicker">WELCOME TO CAMPUSCONNECT</p>
+          <h1>Where ambition<br />meets <em>opportunity.</em></h1>
+          <p>
+            Your complete college companion — learn, connect, grow, and make
+            every moment on campus count.
+          </p>
+          <div class="actions">
+            <a class="btn gold" href="#services">Explore campus →</a
+            ><a class="btn outline" href="/ai-assistant">Ask Campus AI ✦</a>
+          </div>
+        </div>
+        <div class="stats">
+          <div><strong>15k+</strong>Students</div>
+          <div><strong>40+</strong>Programmes</div>
+          <div><strong>95%</strong>Placement rate</div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <div class="heading">
+          <div>
+            <p class="kicker dark">YOUR CAMPUS, SIMPLIFIED</p>
+            <h2>Everything you need,<br /><em>in one place.</em></h2>
+          </div>
+          <p>
+            Stay ahead of the things that matter: academic updates, campus
+            experiences, and a successful future.
+          </p>
+        </div>
+        <div class="cards">
+          <article
+            class="featured clickable-card"
+            onclick="window.location.href = '/events'"
+            tabindex="0"
+            role="link"
+            aria-label="Open Events page"
+          >
+            <i>✦</i><small>01</small>
+            <h3>Events</h3>
+            <p>
+              Discover workshops, fests, seminars, clubs and everything
+              happening on campus.
+            </p>
+            <a href="/events">Explore events →</a>
+          </article>
+          <article
+            class="clickable-card"
+            onclick="window.location.href = '/faculty'"
+            tabindex="0"
+            role="link"
+            aria-label="Open Faculty page"
+          >
+            <i>♙</i><small>02</small>
+            <h3>Faculty</h3>
+            <p>
+              Connect with experienced mentors and find department contacts with
+              ease.
+            </p>
+            <a href="/faculty">Meet faculty →</a>
+          </article>
+          <article
+            class="clickable-card"
+            onclick="window.location.href = '/exams'"
+            tabindex="0"
+            role="link"
+            aria-label="Open Exams page"
+          >
+            <i>□</i><small>03</small>
+            <h3>Exams</h3>
+            <p>
+              Never miss a date. Get schedules, hall tickets and results in one
+              place.
+            </p>
+            <a href="/exams">View exams →</a>
+          </article>
+          <article
+            class="clickable-card"
+            onclick="window.location.href = '/courses'"
+            tabindex="0"
+            role="link"
+            aria-label="Open Courses page"
+          >
+            <i>▤</i><small>04</small>
+            <h3>Courses</h3>
+            <p>
+              Explore programmes built to prepare you for the world beyond
+              campus.
+            </p>
+            <a href="/courses">Browse courses →</a>
+          </article>
+          <article
+            class="clickable-card"
+            onclick="window.location.href = '/fees'"
+            tabindex="0"
+            role="link"
+            aria-label="Open Fees page"
+          >
+            <i>₹</i><small>05</small>
+            <h3>Fees</h3>
+            <p>
+              Find clear fee structures, payment dates and scholarship
+              information.
+            </p>
+            <a href="/fees">Check fees →</a>
+          </article>
+          <article
+            class="clickable-card"
+            onclick="window.location.href = '/placements'"
+            tabindex="0"
+            role="link"
+            aria-label="Open Placements page"
+          >
+            <i>↗</i><small>06</small>
+            <h3>Placements</h3>
+            <p>
+              Chart your career with opportunities, training and placement
+              updates.
+            </p>
+            <a href="/placements">Build career →</a>
+          </article>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <div>
+          <p class="kicker dark">A CAMPUS BUILT FOR YOU</p>
+          <h2>Learn beyond the<br /><em>classroom.</em></h2>
+          <p>
+            From your first lecture to your first offer letter, CampusConnect
+            brings the people, resources and possibilities of college life
+            closer to you.
+          </p>
+          <a href="/ai-assistant">Discover with Campus AI →</a>
+        </div>
+        <aside>
+          <div>⌁<strong>500+</strong><small>Campus events yearly</small></div>
+          <div>✦<strong>24/7</strong><small>Student support</small></div>
+        </aside>
+      </section>
+      <section class="ai-call">
+        <div>
+          <p class="kicker">YOUR SMART CAMPUS COMPANION</p>
+          <h2>Questions about college?<br /><em>Just ask.</em></h2>
+          <p>
+            Campus AI gives instant answers about courses, exams, fees, events
+            and more.
+          </p>
+          <a class="btn white" href="/ai-assistant">Talk to Campus AI ✦</a>
+        </div>
+        <span class="orb">✦</span>
+      </section>
+    </main>
+    <footer>
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <p>Made for a better campus experience. © 2026</p>
+    </footer>
+    <script>
+      const authAction = document.querySelector("#auth-action");
+      fetch("/api/auth/me")
+        .then((response) => (response.ok ? response.json() : null))
+        .then((data) => {
+          if (!data) return;
+          authAction.textContent = "Log out";
+          authAction.href = "/";
+          authAction.onclick = async (event) => {
+            event.preventDefault();
+            await fetch("/api/auth/logout", { method: "POST" });
+            location.href = "/";
+          };
+        })
+        .catch(() => {});
+    </script>
+  </body>
+</html>
