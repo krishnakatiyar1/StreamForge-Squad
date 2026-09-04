@@ -1,3 +1,5 @@
+const dns = require("node:dns");
+dns.setServers(["8.8.8.8", "1.1.1.1"]);
 require("dotenv").config();
 const http = require("node:http");
 const crypto = require("node:crypto");
@@ -7,7 +9,7 @@ const { MongoClient } = require("mongodb");
 
 const port = Number(process.env.PORT) || 3000;
 const publicDirectory = path.join(__dirname, "..", "public");
-const publicFiles = { "/styles.css": ["style.css", "text/css; charset=utf-8"], "/assets/image.png": ["assets/image.png", "image/png"] };
+const publicFiles = { "/styles.css": ["styles.css", "text/css; charset=utf-8"], "/assets/image.png": ["assets/image.png", "image/png"] };
 const pageRoutes = { "/": "index.html", "/events": "events.html", "/faculty": "faculty.html", "/exams": "exams.html", "/courses": "courses.html", "/fees": "fees.html", "/placements": "placements.html", "/login": "login.html", "/signup": "signup.html", "/ai-assistant": "ai-assistant.html" };
 
 // --- MongoDB ---
@@ -146,6 +148,10 @@ http.createServer(async (request, response) => {
     return sendJson(response, 500, { error: "Something went wrong. Please try again." });
   }
 }).listen(port, async () => {
-  await connectMongo();
+  try {
+    await connectMongo();
+  } catch (error) {
+    console.error("MongoDB connection failed; the site will run, but login and signup are unavailable.", error.message);
+  }
   console.log(`Server listening at http://localhost:${port}`);
 });
