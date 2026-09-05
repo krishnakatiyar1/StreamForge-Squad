@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Applications | CampusConnect Admin</title><link rel="stylesheet" href="/styles.css" /></head>
+  <body class="admin-page">
+    <header class="plain admin-header"><a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a><button id="logout-button">Log out</button></header>
+    <main class="admin-dashboard">
+      <p class="kicker dark">ADMISSIONS</p><h1>Student applications</h1><p><a class="btn gold admin-users-button" href="/admin/users">User information</a></p><p id="application-count" class="admin-summary">Loading applications...</p>
+      <div class="applications-table-wrap"><table><thead><tr><th>Applicant</th><th>Contact</th><th>Course</th><th>Message</th><th>Submitted</th></tr></thead><tbody id="applications-list"></tbody></table></div>
+    </main>
+    <script>
+      const list = document.querySelector("#applications-list"), count = document.querySelector("#application-count");
+      const escapeHtml = (value) => String(value || "—").replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;" })[character]);
+      async function loadApplications() {
+        const response = await fetch("/api/admin/applications");
+        if (!response.ok) return location.href = "/admin";
+        const { applications } = await response.json(); count.textContent = `${applications.length} application${applications.length === 1 ? "" : "s"} received`;
+        list.innerHTML = applications.length ? applications.map((application) => `<tr><td><strong>${escapeHtml(application.name)}</strong></td><td>${escapeHtml(application.email)}<br />${escapeHtml(application.phone)}</td><td>${escapeHtml(application.course)}</td><td>${escapeHtml(application.message)}</td><td>${new Date(application.createdAt).toLocaleString()}</td></tr>`).join("") : '<tr><td colspan="5" class="empty-row">No applications yet.</td></tr>';
+      }
+      document.querySelector("#logout-button").onclick = async () => { await fetch("/api/admin/logout", { method: "POST" }); location.href = "/admin"; };
+      loadApplications();
+    </script>
+  </body>
+</html>

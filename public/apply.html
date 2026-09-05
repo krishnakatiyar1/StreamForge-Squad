@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apply | CampusConnect</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body class="application-page">
+    <header class="plain">
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <a href="/">← Back to home</a>
+    </header>
+    <main class="application-layout">
+      <section class="application-intro">
+        <p class="kicker dark">START YOUR JOURNEY</p>
+        <h1>Apply to<br /><em>CampusConnect.</em></h1>
+        <p>Share a few details and our admissions team will contact you with the next steps.</p>
+        <ul>
+          <li>No campus visit needed to get started</li>
+          <li>Choose from four degree programmes</li>
+          <li>Get guidance from an admissions counsellor</li>
+        </ul>
+      </section>
+      <section class="application-card" aria-labelledby="application-title">
+        <p class="kicker dark">ADMISSION ENQUIRY</p>
+        <h2 id="application-title">Tell us about yourself</h2>
+        <form id="application-form">
+          <label>Full name<input name="name" autocomplete="name" required /></label>
+          <label>Email address<input type="email" name="email" autocomplete="email" required /></label>
+          <label>Phone number<input type="tel" name="phone" autocomplete="tel" required /></label>
+          <label>Preferred course
+            <select name="course" required>
+              <option value="">Select a course</option>
+              <option>BCA</option><option>BBA</option><option>MCA</option><option>MBA</option>
+            </select>
+          </label>
+          <label>Questions for admissions <textarea name="message" rows="3" placeholder="Optional"></textarea></label>
+          <p id="form-message" class="form-message" role="status"></p>
+          <button class="btn gold" type="submit">Submit application</button>
+        </form>
+      </section>
+    </main>
+    <script>
+      const form = document.querySelector("#application-form");
+      const message = document.querySelector("#form-message");
+      form.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const submitButton = form.querySelector("button");
+        submitButton.disabled = true;
+        message.textContent = "Submitting your application...";
+        try {
+          const response = await fetch("/api/applications", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+          const data = await response.json();
+          if (!response.ok) throw new Error(data.error);
+          form.reset();
+          message.className = "form-message success";
+          message.textContent = "Thanks! Your application has been submitted. Our admissions team will contact you soon.";
+        } catch (error) {
+          message.className = "form-message error";
+          message.textContent = error.message || "Unable to submit your application. Please try again.";
+        } finally { submitButton.disabled = false; }
+      });
+    </script>
+  </body>
+</html>

@@ -10,20 +10,26 @@ const { MongoClient } = require("mongodb");
 const port = Number(process.env.PORT) || 3000;
 const publicDirectory = path.join(__dirname, "..", "public");
 const publicFiles = { "/styles.css": ["styles.css", "text/css; charset=utf-8"], "/assets/image.png": ["assets/image.png", "image/png"] };
-const pageRoutes = { "/": "index.html", "/events": "events.html", "/faculty": "faculty.html", "/exams": "exams.html", "/courses": "courses.html", "/fees": "fees.html", "/placements": "placements.html", "/login": "login.html", "/signup": "signup.html", "/ai-assistant": "ai-assistant.html" };
+const pageRoutes = { "/": "index.html", "/events": "events.html", "/faculty": "faculty.html", "/exams": "exams.html", "/courses": "courses.html", "/fees": "fees.html", "/placements": "placements.html", "/login": "login.html", "/signup": "signup.html", "/apply": "apply.html", "/admin": "admin-login.html", "/admin/register": "admin-register.html", "/admin/dashboard": "admin-dashboard.html", "/admin/users": "admin-users.html", "/ai-assistant": "ai-assistant.html" };
 
 // --- MongoDB ---
 const mongoClient = new MongoClient(process.env.MONGO_URI);
 let usersCollection;
 let sessionsCollection;
+let applicationsCollection;
+let adminsCollection;
 
 async function connectMongo() {
   await mongoClient.connect();
   const db = mongoClient.db();
   usersCollection = db.collection("users");
   sessionsCollection = db.collection("sessions");
+  applicationsCollection = db.collection("applications");
+  adminsCollection = db.collection("admins");
   await usersCollection.createIndex({ email: 1 }, { unique: true });
   await sessionsCollection.createIndex({ expiresAt: 1 }, { expireAfterSeconds: 0 }); // auto-cleans expired sessions
+  await applicationsCollection.createIndex({ createdAt: -1 });
+  await adminsCollection.createIndex({ email: 1 }, { unique: true });
   console.log("MongoDB connected");
 }
 
@@ -86,6 +92,17 @@ function sessionCookie(id) {
   return `sessionId=${id}; HttpOnly; SameSite=Lax; Path=/; Max-Age=86400${secure}`;
 }
 
+function adminSessionCookie(id) {
+  const secure = process.env.NODE_ENV === "production" ? "; Secure" : "";
+  return `adminSessionId=${id}; HttpOnly; SameSite=Strict; Path=/; Max-Age=28800${secure}`;
+}
+
+function sameSecret(input, expected) {
+  const inputBuffer = Buffer.from(input);
+  const expectedBuffer = Buffer.from(expected);
+  return inputBuffer.length === expectedBuffer.length && crypto.timingSafeEqual(inputBuffer, expectedBuffer);
+}
+
 async function currentUser(request) {
   const sessionId = cookies(request).sessionId || "";
   if (!sessionId) return null;
@@ -94,7 +111,64 @@ async function currentUser(request) {
   return (await usersCollection.findOne({ id: session.userId })) || null;
 }
 
+async function currentAdmin(request) {
+  const sessionId = cookies(request).adminSessionId || "";
+  if (!sessionId) return false;
+  const session = await sessionsCollection.findOne({ id: sessionId, role: "admin", expiresAt: { $gte: new Date() } });
+  return Boolean(session);
+}
+
 async function api(request, response, pathname) {
+  if (pathname === "/api/admin/register" && request.method === "POST") {
+    const { email = "", password = "", credentialId = "" } = await body(request);
+    const registrationId = process.env.ADMIN_REGISTRATION_ID || "";
+    const cleanEmail = email.trim().toLowerCase();
+    if (!registrationId) return sendJson(response, 503, { error: "Admin registration has not been configured." });
+    if (!sameSecret(credentialId, registrationId)) return sendJson(response, 401, { error: "The administrator credential ID is not valid." });
+    if (!isValidEmail(cleanEmail) || password.length < 12) return sendJson(response, 400, { error: "Enter a valid email and a password of at least 12 characters." });
+    try { await adminsCollection.insertOne({ id: crypto.randomUUID(), email: cleanEmail, passwordHash: hash(password), createdAt: new Date().toISOString() }); }
+    catch (error) { if (error.code === 11000) return sendJson(response, 409, { error: "An administrator account already exists for this email." }); throw error; }
+    return sendJson(response, 201, { message: "Administrator account created. You can now sign in." });
+  }
+
+  if (pathname === "/api/admin/login" && request.method === "POST") {
+    const { email = "", password = "", credentialId = "" } = await body(request);
+    const registrationId = process.env.ADMIN_REGISTRATION_ID || "";
+    if (!registrationId) return sendJson(response, 503, { error: "Admin login has not been configured." });
+    const admin = await adminsCollection.findOne({ email: email.trim().toLowerCase() });
+    if (!sameSecret(credentialId, registrationId) || !admin || !password || !matches(password, admin.passwordHash)) return sendJson(response, 401, { error: "Incorrect email, password, or credential ID." });
+    const id = crypto.randomBytes(32).toString("hex");
+    await sessionsCollection.insertOne({ id, role: "admin", adminId: admin.id, expiresAt: new Date(Date.now() + 28_800_000) });
+    return sendJson(response, 200, { message: "Admin login successful." }, { "Set-Cookie": adminSessionCookie(id) });
+  }
+
+  if (pathname === "/api/admin/applications" && request.method === "GET") {
+    if (!(await currentAdmin(request))) return sendJson(response, 401, { error: "Administrator login required." });
+    const applications = await applicationsCollection.find({}, { projection: { _id: 0 } }).sort({ createdAt: -1 }).toArray();
+    return sendJson(response, 200, { applications });
+  }
+
+  if (pathname === "/api/admin/users" && request.method === "GET") {
+    if (!(await currentAdmin(request))) return sendJson(response, 401, { error: "Administrator login required." });
+    const users = await usersCollection.find({}, { projection: { _id: 0, id: 1, name: 1, email: 1, createdAt: 1 } }).sort({ createdAt: -1 }).toArray();
+    return sendJson(response, 200, { users });
+  }
+
+  if (pathname === "/api/admin/logout" && request.method === "POST") {
+    await sessionsCollection.deleteOne({ id: cookies(request).adminSessionId || "", role: "admin" });
+    return sendJson(response, 200, { message: "Logged out." }, { "Set-Cookie": "adminSessionId=; HttpOnly; SameSite=Strict; Path=/; Max-Age=0" });
+  }
+
+  if (pathname === "/api/applications" && request.method === "POST") {
+    const { name = "", email = "", phone = "", course = "", message = "" } = await body(request);
+    const application = { id: crypto.randomUUID(), name: name.trim(), email: email.trim().toLowerCase(), phone: phone.trim(), course: course.trim(), message: message.trim(), status: "submitted", createdAt: new Date().toISOString() };
+    if (!application.name || !isValidEmail(application.email) || !application.phone || !application.course) {
+      return sendJson(response, 400, { error: "Please enter your name, email, phone number, and preferred course." });
+    }
+    await applicationsCollection.insertOne(application);
+    return sendJson(response, 201, { message: "Application submitted successfully.", applicationId: application.id });
+  }
+
   if (pathname === "/api/auth/signup" && request.method === "POST") {
     const { name = "", email = "", password = "" } = await body(request);
     const cleanName = name.trim();
@@ -136,6 +210,10 @@ http.createServer(async (request, response) => {
     const pathname = url.pathname;
     if (pathname.startsWith("/api/")) return await api(request, response, pathname);
     if (pathname === "/health") return sendJson(response, 200, { status: "ok" });
+    if ((pathname === "/admin/dashboard" || pathname === "/admin/users") && !(await currentAdmin(request))) {
+      response.writeHead(302, { Location: "/admin", "Cache-Control": "no-store" });
+      return response.end();
+    }
     if (pathname === "/ai-assistant" && !(await currentUser(request))) {
       response.writeHead(302, { Location: "/login?next=%2Fai-assistant", "Cache-Control": "no-store" });
       return response.end();
