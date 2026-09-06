@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campus Infrastructure & Facilities | VSICS CampusConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .infra-hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0d2541 100%);
+        color: #ffffff;
+        padding: 3.5rem 2rem 3rem;
+        border-radius: 20px;
+        margin-bottom: 2.5rem;
+        box-shadow: 0 12px 35px rgba(15, 23, 42, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .infra-kicker {
+        display: inline-block;
+        background: rgba(214, 164, 71, 0.2);
+        color: #f0c466;
+        border: 1px solid rgba(240, 196, 102, 0.3);
+        padding: 0.35rem 0.85rem;
+        border-radius: 30px;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .infra-hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2rem, 3.8vw, 3.2rem);
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        line-height: 1.2;
+      }
+
+      .infra-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+        gap: 1.75rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .infra-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .infra-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+        border-color: #cbd5e1;
+      }
+
+      .infra-icon {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+        background: #f8fafc;
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        border: 1px solid #e2e8f0;
+      }
+
+      .infra-card h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 0.6rem;
+      }
+
+      .infra-card p {
+        color: #64748b;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+      }
+
+      .infra-features {
+        padding-left: 1.2rem;
+        color: #334155;
+        font-size: 0.88rem;
+        font-weight: 500;
+        display: grid;
+        gap: 0.3rem;
+      }
+
+      .footer-codes-bar {
+        background: #0f172a;
+        color: #94a3b8;
+        padding: 2.5rem 1.5rem;
+        margin-top: 4rem;
+        border-radius: 16px 16px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .code-badge-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .code-chip {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      .code-chip strong {
+        color: #f0c466;
+      }
+    </style>
+  </head>
+  <body class="detail-page">
+    <header class="plain">
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <a class="login-nav" href="/feedback" style="background: #112e4d; color: #fff !important; font-size: 0.85rem;">Feedback 💬</a>
+        <a href="/">← Back to home</a>
+      </div>
+    </header>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+      <!-- Hero Banner -->
+      <section class="infra-hero">
+        <span class="infra-kicker">🏛️ WORLD-CLASS INFRASTRUCTURE</span>
+        <h1>State-of-the-Art Campus<br /><em>Facilities & Resources.</em></h1>
+        <p>
+          Discover VSICS Kanpur's advanced computer laboratories, digital central library, 600-seater auditorium, transport fleet, and sports complex designed for academic excellence.
+        </p>
+      </section>
+
+      <!-- Section Title -->
+      <div class="section-title" style="margin-bottom: 1.75rem;">
+        <h2>Key Campus Facilities</h2>
+        <p style="color: #64748b; font-size: 0.95rem;">Building an unparalleled environment for learning, innovation, and growth</p>
+      </div>
+
+      <!-- Infrastructure Grid -->
+      <div class="infra-grid">
+
+        <!-- Facility 1: AC Computer Labs -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">💻</div>
+            <h3>500+ AC High-Tech Computer Labs</h3>
+            <p>Multiple air-conditioned computing centers equipped with high-performance desktop systems, dual OS (Linux & Windows), and high-speed optical fiber Internet.</p>
+            <ul class="infra-features">
+              <li>✓ Gigabit Internet Connection</li>
+              <li>✓ Advanced Software Suites (Oracle, Python, Java, R)</li>
+              <li>✓ Dedicated AI & Data Analytics Lab</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Facility 2: Digital Central Library -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">📚</div>
+            <h3>Central Digital Library & E-Center</h3>
+            <p>Extensive repository of over 25,000+ volumes, international research journals, E-book subscriptions, and quiet reading zones for students and faculty.</p>
+            <ul class="infra-features">
+              <li>✓ IEEE, DELNET & Springer Subscriptions</li>
+              <li>✓ Digital Automated Book Search Kiosks</li>
+              <li>✓ Air-Conditioned Study Lounges</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Facility 3: Auditorium & Seminar Halls -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">🎭</div>
+            <h3>600-Seater AC Auditorium</h3>
+            <p>State-of-the-art auditorium featuring professional acoustics, HD projection systems, and stage lighting for fests, guest lectures, and convocations.</p>
+            <ul class="infra-features">
+              <li>✓ Dolby Digital Sound System</li>
+              <li>✓ Multi-Tiered Ergonomic Seating</li>
+              <li>✓ Additional Air-Conditioned Seminar Halls</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Facility 4: Transport & Bus Fleet -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">🚌</div>
+            <h3>Transport & Bus Service</h3>
+            <p>Fleet of comfortable college buses providing safe daily commute coverage across Kanpur City, Saket Nagar, Juhi, Kalyanpur, Rawatpur, and suburbs.</p>
+            <ul class="infra-features">
+              <li>✓ GPS Tracked Fleet</li>
+              <li>✓ Experienced Professional Drivers</li>
+              <li>✓ Comprehensive Route Coverage</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Facility 5: Sports Complex -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">⚽</div>
+            <h3>Sports Complex & Gymkhana</h3>
+            <p>Spacious sports grounds for Cricket, Football, and Volleyball along with indoor facilities for Badminton, Table Tennis, Chess, and Carrom.</p>
+            <ul class="infra-features">
+              <li>✓ Full-Sized Cricket & Football Ground</li>
+              <li>✓ Indoor Badminton & Table Tennis Arena</li>
+              <li>✓ Annual Khelotsav Sports Championship</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Facility 6: Cafeteria & Food Court -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">🍱</div>
+            <h3>Cafeteria & Food Court</h3>
+            <p>Modern, hygienic campus dining hall offering freshly cooked meals, snacks, coffee, and beverages in a vibrant social setting for students.</p>
+            <ul class="infra-features">
+              <li>✓ Strict Quality & Hygiene Checks</li>
+              <li>✓ Affordable Student Rates</li>
+              <li>✓ Indoor & Outdoor Seating</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Facility 7: Smart Classrooms -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">📺</div>
+            <h3>Smart Multimedia Classrooms</h3>
+            <p>Spacious, well-ventilated lecture theaters equipped with interactive smartboards, audio-visual projectors, and digital teaching tools.</p>
+            <ul class="infra-features">
+              <li>✓ High-Definition AV Projectors</li>
+              <li>✓ Ergonomic Seating Layouts</li>
+              <li>✓ ICT-Enabled Learning Modules</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Facility 8: Wi-Fi Connected Campus -->
+        <article class="infra-card">
+          <div>
+            <div class="infra-icon">📡</div>
+            <h3>24x7 Wi-Fi Connected Campus</h3>
+            <p>Seamless wireless connectivity across all academic blocks, library, auditorium, and cafeteria for continuous research and project work.</p>
+            <ul class="infra-features">
+              <li>✓ High-Speed Firewall Protected Wi-Fi</li>
+              <li>✓ Uninterrupted Power Backup (Silent Generators)</li>
+              <li>✓ 24x7 CCTV Campus Security</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Footer Credentials Widget -->
+    <footer style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem 2rem;">
+      <div class="footer-codes-bar">
+        <div>
+          <a class="logo" href="/" style="color: #fff;"><b>C</b> Campus<span style="color: #f0c466;">Connect</span></a>
+          <p style="color: #94a3b8; font-size: 0.85rem; margin-top: 0.3rem;">Dr. Virendra Swarup Institute of Computer Studies, Kanpur</p>
+        </div>
+
+        <div class="code-badge-group">
+          <div class="code-chip">AKTU Code: <strong>048</strong> (MCA/MBA)</div>
+          <div class="code-chip">CSJMU Code: <strong>VS</strong> (BCA/BBA)</div>
+          <div class="code-chip">AICTE ID: <strong>1-5543171</strong></div>
+          <div class="code-chip">ISO Certified: <strong>9001:2000</strong></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

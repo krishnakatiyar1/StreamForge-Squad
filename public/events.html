@@ -3,98 +3,805 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events | CampusConnect</title>
+    <title>Events & Campus Life | VSICS CampusConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .events-hero-wrapper {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0d2541 100%);
+        color: #fff;
+        padding: 4rem 2rem 3.5rem;
+        border-radius: 20px;
+        margin-bottom: 2.5rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 12px 35px rgba(15, 23, 42, 0.25);
+      }
+
+      .events-hero-wrapper::before {
+        content: "";
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        width: 320px;
+        height: 320px;
+        background: radial-gradient(circle, rgba(214, 164, 71, 0.25) 0%, rgba(0,0,0,0) 70%);
+        border-radius: 50%;
+        pointer-events: none;
+      }
+
+      .events-kicker {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(214, 164, 71, 0.15);
+        color: #f0c466;
+        border: 1px solid rgba(240, 196, 102, 0.3);
+        padding: 0.35rem 0.9rem;
+        border-radius: 30px;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .events-hero-wrapper h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2.2rem, 4vw, 3.4rem);
+        font-weight: 800;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+        color: #ffffff;
+      }
+
+      .events-hero-wrapper h1 em {
+        color: #f0c466;
+        font-style: normal;
+      }
+
+      .events-hero-wrapper p {
+        color: #cbd5e1;
+        font-size: 1.1rem;
+        max-width: 650px;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      /* Search & Filter Bar */
+      .events-search-bar {
+        display: flex;
+        gap: 1rem;
+        max-width: 650px;
+        background: rgba(255, 255, 255, 0.08);
+        padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        align-items: center;
+      }
+
+      .events-search-bar input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      .events-search-bar input::placeholder {
+        color: #94a3b8;
+      }
+
+      .events-search-bar button {
+        background: #d6a447;
+        color: #112e4d;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: transform 0.2s ease, background 0.2s ease;
+      }
+
+      .events-search-bar button:hover {
+        background: #e2b356;
+        transform: translateY(-1px);
+      }
+
+      /* Category Pills */
+      .category-pills {
+        display: flex;
+        gap: 0.6rem;
+        flex-wrap: wrap;
+        margin: 2rem 0 2.5rem;
+      }
+
+      .pill-btn {
+        background: #ffffff;
+        color: #475569;
+        border: 1px solid #cbd5e1;
+        padding: 0.55rem 1.2rem;
+        border-radius: 30px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.25s ease;
+      }
+
+      .pill-btn:hover,
+      .pill-btn.active {
+        background: #112e4d;
+        color: #ffffff;
+        border-color: #112e4d;
+        box-shadow: 0 4px 12px rgba(17, 46, 77, 0.15);
+      }
+
+      /* Spotlight Featured Event Card */
+      .spotlight-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        border: 2px solid #e2e8f0;
+        border-radius: 16px;
+        overflow: hidden;
+        margin-bottom: 3rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+      }
+
+      @media (max-width: 868px) {
+        .spotlight-card {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      .spotlight-info {
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .spotlight-badge {
+        display: inline-block;
+        background: #fef3c7;
+        color: #b45309;
+        font-weight: 800;
+        font-size: 0.78rem;
+        padding: 0.3rem 0.75rem;
+        border-radius: 6px;
+        text-transform: uppercase;
+        margin-bottom: 0.8rem;
+        width: fit-content;
+      }
+
+      .spotlight-title {
+        font-family: "Playfair Display", serif;
+        font-size: 1.9rem;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 0.75rem;
+        line-height: 1.25;
+      }
+
+      .spotlight-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        margin-bottom: 1.25rem;
+        color: #475569;
+        font-size: 0.92rem;
+        font-weight: 600;
+      }
+
+      .spotlight-meta span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .spotlight-desc {
+        color: #64748b;
+        font-size: 0.98rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .spotlight-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem 1rem;
+        margin-bottom: 2rem;
+        padding-left: 1.2rem;
+        color: #334155;
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+
+      .spotlight-actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .spotlight-banner-side {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        padding: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+      }
+
+      .prize-badge-large {
+        background: rgba(214, 164, 71, 0.2);
+        border: 2px solid #d6a447;
+        padding: 1.5rem 2rem;
+        border-radius: 14px;
+        margin-bottom: 1.5rem;
+      }
+
+      .prize-badge-large strong {
+        display: block;
+        font-size: 2.2rem;
+        font-weight: 800;
+        color: #f0c466;
+      }
+
+      .prize-badge-large span {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #e2e8f0;
+      }
+
+      /* Events Grid Cards */
+      .events-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.75rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .event-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .event-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+        border-color: #cbd5e1;
+      }
+
+      .card-tag {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 0.25rem 0.65rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        margin-bottom: 0.8rem;
+        width: fit-content;
+      }
+
+      .tag-tech { background: #dbeafe; color: #1e40af; }
+      .tag-cultural { background: #fce7f3; color: #9d174d; }
+      .tag-sports { background: #dcfce7; color: #166534; }
+      .tag-workshop { background: #fef3c7; color: #92400e; }
+      .tag-csr { background: #ccfbf1; color: #115e59; }
+
+      .event-card h3 {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 0.5rem;
+        line-height: 1.35;
+      }
+
+      .event-card-date {
+        color: #2563eb;
+        font-size: 0.88rem;
+        font-weight: 700;
+        margin-bottom: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .event-card p {
+        color: #64748b;
+        font-size: 0.92rem;
+        line-height: 1.55;
+        margin-bottom: 1.25rem;
+      }
+
+      .event-card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1rem;
+        border-top: 1px solid #f1f5f9;
+      }
+
+      .event-card-footer span {
+        font-size: 0.82rem;
+        color: #64748b;
+        font-weight: 600;
+      }
+
+      .btn-register-sm {
+        background: #112e4d;
+        color: #fff;
+        border: none;
+        padding: 0.45rem 1rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+
+      .btn-register-sm:hover {
+        background: #1e3a5f;
+      }
+
+      /* Modal Styling */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(4px);
+        display: none;
+        place-items: center;
+        z-index: 9999;
+        padding: 1rem;
+      }
+
+      .modal-box {
+        background: #ffffff;
+        width: min(100%, 500px);
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+        position: relative;
+        animation: modalSlide 0.3s ease;
+      }
+
+      @keyframes modalSlide {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 1.25rem;
+        right: 1.25rem;
+        background: #f1f5f9;
+        border: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        color: #475569;
+      }
+
+      .modal-box h2 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 0.25rem;
+      }
+
+      .modal-box p {
+        color: #64748b;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .modal-form {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .modal-form label {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: #334155;
+        display: grid;
+        gap: 0.35rem;
+      }
+
+      .modal-form input,
+      .modal-form select {
+        padding: 0.75rem 0.9rem;
+        border: 1px solid #cbd5e1;
+        border-radius: 8px;
+        font-size: 0.95rem;
+        outline: none;
+      }
+
+      .modal-form input:focus,
+      .modal-form select:focus {
+        border-color: #2563eb;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+      }
+
+      .btn-submit-modal {
+        background: #112e4d;
+        color: #fff;
+        border: none;
+        padding: 0.85rem;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 0.5rem;
+      }
+
+      .btn-submit-modal:hover {
+        background: #1e3a5f;
+      }
+
+      /* Toast Notification */
+      .toast-msg {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background: #10b981;
+        color: #fff;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        font-weight: 700;
+        box-shadow: 0 10px 25px rgba(16, 185, 129, 0.3);
+        display: none;
+        z-index: 10000;
+      }
+    </style>
   </head>
   <body class="detail-page">
     <header class="plain">
-      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a
-      ><a href="/">← Back to home</a>
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <a class="login-nav" href="/feedback" style="background: #112e4d; color: #fff !important; font-size: 0.85rem;">Feedback 💬</a>
+        <a href="/">← Back to home</a>
+      </div>
     </header>
-    <main>
-      <section class="detail-hero">
-        <p class="kicker dark">CAMPUS LIFE</p>
-        <h1>Make memories beyond<br /><em>the classroom.</em></h1>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+      <!-- Hero Banner -->
+      <section class="events-hero-wrapper">
+        <span class="events-kicker">✦ VSICS Campus Life & Cultural Hub</span>
+        <h1>Where passion meets<br /><em>extraordinary events.</em></h1>
         <p>
-          Explore learning experiences, campus celebrations, creative
-          performances, and sporting activities throughout the year.
+          From the flagship Srijan Mega Fest to AI Hackathons, Sports Tournaments, and Corporate Conclaves — discover, participate, and lead on campus.
         </p>
+
+        <!-- Search Bar -->
+        <div class="events-search-bar">
+          <input
+            type="text"
+            id="eventSearchInput"
+            placeholder="Search events e.g. Srijan, Hackathon, Sports, Workshop..."
+            onkeyup="filterEvents()"
+          />
+          <button onclick="filterEvents()">Search Events</button>
+        </div>
       </section>
-      <section class="detail-content">
-        <div class="section-title">
-          <h2>Campus events</h2>
-          <button>All categories ▾</button>
+
+      <!-- Category Filter Pills -->
+      <div class="category-pills">
+        <button class="pill-btn active" onclick="setCategory('all', this)">All Events</button>
+        <button class="pill-btn" onclick="setCategory('Mega Fest', this)">Mega Fests</button>
+        <button class="pill-btn" onclick="setCategory('Tech & Hackathons', this)">Tech & Hackathons</button>
+        <button class="pill-btn" onclick="setCategory('Cultural & Fests', this)">Cultural & Fests</button>
+        <button class="pill-btn" onclick="setCategory('Sports & Athletics', this)">Sports & Athletics</button>
+        <button class="pill-btn" onclick="setCategory('Workshops & Seminars', this)">Workshops & Seminars</button>
+        <button class="pill-btn" onclick="setCategory('Social & CSR', this)">CSR & Social</button>
+      </div>
+
+      <!-- Spotlight Feature Event: Srijan 2026 -->
+      <section class="spotlight-card" id="spotlight-srijan">
+        <div class="spotlight-info">
+          <span class="spotlight-badge">★ Annual Flagship Mega Fest</span>
+          <h2 class="spotlight-title">SRIJAN 2026 — Inter-College Tech & Cultural Fiesta</h2>
+          <div class="spotlight-meta">
+            <span>📅 Spring Semester 2026</span>
+            <span>📍 Main Campus Auditorium & Grounds</span>
+            <span>👥 5000+ Participants</span>
+          </div>
+          <p class="spotlight-desc">
+            VSICS Kanpur's biggest annual extravaganza bringing together over 50+ colleges across Uttar Pradesh for a 3-day celebration of technical brilliance, creative arts, music, and sports.
+          </p>
+
+          <ul class="spotlight-list">
+            <li>✓ CodeSprint 24-Hr Hackathon</li>
+            <li>✓ E-Sports Gaming Arena (BGMI/Valorant)</li>
+            <li>✓ Western & Classical Group Dance</li>
+            <li>✓ Battle of the Bands & Rock Night</li>
+            <li>✓ Fashion Runway & Glamour Walk</li>
+            <li>✓ Corporate Management Quiz</li>
+          </ul>
+
+          <div class="spotlight-actions">
+            <button class="btn gold" onclick="openRegisterModal('SRIJAN 2026 Mega Fest')">Register for Srijan ✦</button>
+            <a class="btn outline" href="/ai-assistant" style="color: #112e4d; border-color: #cbd5e1;">Ask Campus AI About Srijan →</a>
+          </div>
         </div>
-        <div class="event-category-grid">
-          <article>
-            <span>✦</span>
-            <h3>Workshops & Training</h3>
-            <p>
-              Skill workshops, certification training, coding sessions, and
-              career-readiness programmes.
-            </p>
-            <ul>
-              <li>Web development workshops</li>
-              <li>Placement training</li>
-              <li>Digital skills sessions</li>
-            </ul>
-          </article>
-          <article>
-            <span>◌</span>
-            <h3>Seminars & Debates</h3>
-            <p>
-              Learn from experts, exchange ideas, and build confidence through
-              discussion.
-            </p>
-            <ul>
-              <li>Industry seminars</li>
-              <li>Guest lectures</li>
-              <li>Debate competitions</li>
-            </ul>
-          </article>
-          <article>
-            <span>♫</span>
-            <h3>Fun Fiesta & Culture</h3>
-            <p>
-              Celebrate campus creativity, traditions, music, and student
-              talent.
-            </p>
-            <ul>
-              <li>Cultural festival</li>
-              <li>Singing competitions</li>
-              <li>Dance performances</li>
-            </ul>
-          </article>
-          <article>
-            <span>◈</span>
-            <h3>Sports Events</h3>
-            <p>
-              Play, compete, and represent your department in indoor and outdoor
-              sports.
-            </p>
-            <ul>
-              <li>Cricket & badminton</li>
-              <li>Table tennis & running</li>
-              <li>Cycling & athletics</li>
-            </ul>
-          </article>
+
+        <div class="spotlight-banner-side">
+          <div class="prize-badge-large">
+            <span>Total Cash Prizes</span>
+            <strong>₹ 2,50,000+</strong>
+            <small style="color: #cbd5e1; display: block; margin-top: 5px;">Trophies + Certificates for All Winners</small>
+          </div>
+          <p style="font-size: 0.95rem; color: #94a3b8; max-width: 320px;">
+            Supported by Dr. Virendra Swarup Educational Foundation (VSEF). Open to all BCA, MCA, BBA, and MBA students!
+          </p>
         </div>
-        <section class="sports-banner">
+      </section>
+
+      <!-- Section Title -->
+      <div class="section-title" style="margin-bottom: 1.5rem;">
+        <h2>Upcoming & Featured Events</h2>
+        <p style="color: #64748b; font-size: 0.95rem;">Explore upcoming workshops, sports meets, hackathons, and cultural fests</p>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="events-grid" id="eventsGrid">
+
+        <!-- Card 1 -->
+        <article class="event-card" data-category="Tech & Hackathons" data-title="codeforge v2 24-hour web & ai hackathon">
           <div>
-            <p class="kicker">PLAY. PERFORM. PROGRESS.</p>
-            <h2>There is a place for every passion.</h2>
+            <span class="card-tag tag-tech">Tech & Hackathons</span>
+            <h3>CodeForge V2 — 24-Hour Web & AI Hackathon</h3>
+            <div class="event-card-date">📅 Oct 18 - 19, 2026 | 📍 Advanced Computing Labs</div>
             <p>
-              From cricket tournaments to cultural nights, CampusConnect helps
-              you find your team, stage, and next big experience.
+              Build innovative web applications and AI solutions with mentorship from senior engineers at IBM and TCS.
             </p>
           </div>
-          <div class="sports-chips">
-            <span>Cricket</span><span>Badminton</span><span>Table Tennis</span
-            ><span>Running</span><span>Cycling</span><span>Football</span
-            ><span>Volleyball</span><span>Chess</span>
+          <div class="event-card-footer">
+            <span>Prize: ₹ 50,000</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('CodeForge V2 Hackathon')">Register Now</button>
           </div>
-        </section>
-      </section>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="event-card" data-category="Sports & Athletics" data-title="khelotsav 2026 annual campus sports meet">
+          <div>
+            <span class="card-tag tag-sports">Sports & Athletics</span>
+            <h3>Khelotsav 2026 — Annual Campus Sports Week</h3>
+            <div class="event-card-date">📅 Nov 05 - 10, 2026 | 📍 VSICS Sports Complex</div>
+            <p>
+              Represent your department in Cricket, Football, Volleyball, Badminton, Table Tennis, Chess, and Track Athletics.
+            </p>
+          </div>
+          <div class="event-card-footer">
+            <span>Overall Trophy</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('Khelotsav 2026 Sports Meet')">Register Now</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="event-card" data-category="Cultural & Fests" data-title="aaghaaz 2026 grand freshers welcome party">
+          <div>
+            <span class="card-tag tag-cultural">Cultural & Fests</span>
+            <h3>Aaghaaz 2026 — Grand Freshers Welcome Gala</h3>
+            <div class="event-card-date">📅 Sep 25, 2026 | 📍 Open Air Theatre</div>
+            <p>
+              Warm welcome ceremony for new BCA, MCA, BBA, and MBA batches featuring Mr. & Ms. Fresher contest, music, and DJ night.
+            </p>
+          </div>
+          <div class="event-card-footer">
+            <span>Free Entry</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('Aaghaaz 2026 Freshers Party')">Register Now</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="event-card" data-category="Workshops & Seminars" data-title="cybersecurity & cloud infrastructure masterclass">
+          <div>
+            <span class="card-tag tag-workshop">Workshops & Seminars</span>
+            <h3>CyberSecurity & Cloud Infrastructure Masterclass</h3>
+            <div class="event-card-date">📅 Oct 02, 2026 | 📍 Seminar Hall 1</div>
+            <p>
+              Interactive workshop by industry ethical hackers and Cloud Architects covering AWS, Azure, and network security.
+            </p>
+          </div>
+          <div class="event-card-footer">
+            <span>Certification Included</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('CyberSecurity Masterclass')">Register Now</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="event-card" data-category="Workshops & Seminars" data-title="corporate leadership talk & hr conclave">
+          <div>
+            <span class="card-tag tag-workshop">Workshops & Seminars</span>
+            <h3>Corporate Leadership Talk & HR Conclave</h3>
+            <div class="event-card-date">📅 Nov 15, 2026 | 📍 Conference Hall</div>
+            <p>
+              Direct interaction with HR Directors and Corporate Leaders from Accenture, Infosys, and Deloitte on career roadmaps.
+            </p>
+          </div>
+          <div class="event-card-footer">
+            <span>Networking Session</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('Corporate HR Conclave')">Register Now</button>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="event-card" data-category="Social & CSR" data-title="blood donation camp & green campus drive">
+          <div>
+            <span class="card-tag tag-csr">CSR & Social</span>
+            <h3>Blood Donation Camp & Green Campus Drive</h3>
+            <div class="event-card-date">📅 Oct 28, 2026 | 📍 Student Activity Center</div>
+            <p>
+              Organized in association with GSVM Medical College Kanpur. Donate blood, plant trees, and receive a Donor Certificate.
+            </p>
+          </div>
+          <div class="event-card-footer">
+            <span>Donor Certificate</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('Blood Donation Camp')">Register Now</button>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="event-card" data-category="Cultural & Fests" data-title="alvida farewell ceremony & graduation evening">
+          <div>
+            <span class="card-tag tag-cultural">Cultural & Fests</span>
+            <h3>Alvida — Farewell Ceremony & Graduation Evening</h3>
+            <div class="event-card-date">📅 May 14, 2027 | 📍 Main Auditorium</div>
+            <p>
+              Emotional farewell evening honoring final year graduating BCA, MCA, BBA, and MBA students with awards and mementos.
+            </p>
+          </div>
+          <div class="event-card-footer">
+            <span>Graduating Batches</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('Alvida Farewell Ceremony')">Register Now</button>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="event-card" data-category="Mega Fest" data-title="battle of bands & e-sports championship">
+          <div>
+            <span class="card-tag tag-tech">Mega Fest</span>
+            <h3>Battle of Bands & E-Sports Championship</h3>
+            <div class="event-card-date">📅 Dec 12, 2026 | 📍 Campus Arena</div>
+            <p>
+              High-octane musical battle between regional college bands paired with live BGMI & Valorant e-sports tournament.
+            </p>
+          </div>
+          <div class="event-card-footer">
+            <span>Prize: ₹ 35,000</span>
+            <button class="btn-register-sm" onclick="openRegisterModal('Battle of Bands & E-Sports')">Register Now</button>
+          </div>
+        </article>
+
+      </div>
     </main>
+
+    <!-- Registration Modal -->
+    <div class="modal-overlay" id="registrationModal">
+      <div class="modal-box">
+        <button class="modal-close" onclick="closeRegisterModal()">✕</button>
+        <h2>Event Registration</h2>
+        <p>Register for <strong id="modalEventName" style="color: #112e4d;">Event</strong></p>
+
+        <form class="modal-form" onsubmit="handleRegistrationSubmit(event)">
+          <label>
+            Full Name
+            <input type="text" id="regName" placeholder="Enter your full name" required />
+          </label>
+          <label>
+            Email / Roll Number
+            <input type="text" id="regId" placeholder="e.g. student@vsics.edu.in or 23BCA042" required />
+          </label>
+          <label>
+            Degree Programme
+            <select id="regCourse" required>
+              <option value="BCA">BCA — Bachelor of Computer Applications</option>
+              <option value="MCA">MCA — Master of Computer Applications</option>
+              <option value="BBA">BBA — Bachelor of Business Administration</option>
+              <option value="MBA">MBA — Master of Business Administration</option>
+            </select>
+          </label>
+          <button type="submit" class="btn-submit-modal">Complete Registration ✦</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast-msg" id="toastMsg">✓ Registration Successful! See you at the event.</div>
+
+    <script>
+      let currentCategory = "all";
+
+      function setCategory(cat, btn) {
+        currentCategory = cat;
+        document.querySelectorAll('.pill-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterEvents();
+      }
+
+      function filterEvents() {
+        const query = document.getElementById('eventSearchInput').value.toLowerCase().trim();
+        const cards = document.querySelectorAll('.event-card');
+
+        cards.forEach(card => {
+          const cardCat = card.getAttribute('data-category');
+          const cardTitle = card.getAttribute('data-title');
+
+          const matchesCat = (currentCategory === "all" || cardCat === currentCategory);
+          const matchesQuery = (!query || cardTitle.includes(query) || cardCat.toLowerCase().includes(query));
+
+          if (matchesCat && matchesQuery) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      }
+
+      function openRegisterModal(eventName) {
+        document.getElementById('modalEventName').textContent = eventName;
+        document.getElementById('registrationModal').style.display = 'grid';
+      }
+
+      function closeRegisterModal() {
+        document.getElementById('registrationModal').style.display = 'none';
+      }
+
+      function handleRegistrationSubmit(e) {
+        e.preventDefault();
+        closeRegisterModal();
+        const toast = document.getElementById('toastMsg');
+        toast.style.display = 'block';
+        setTimeout(() => {
+          toast.style.display = 'none';
+        }, 3500);
+      }
+    </script>
+
+    <!-- Footer Credentials Widget -->
+    <footer style="max-width: 1200px; margin: 4rem auto 0; padding: 0 1.5rem 2rem;">
+      <div style="background: #0f172a; color: #94a3b8; padding: 2.5rem 1.5rem; border-radius: 16px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+        <div>
+          <a class="logo" href="/" style="color: #fff;"><b>C</b> Campus<span style="color: #f0c466;">Connect</span></a>
+          <p style="color: #94a3b8; font-size: 0.85rem; margin-top: 0.3rem;">Dr. Virendra Swarup Institute of Computer Studies, Kanpur</p>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.4rem 0.85rem; border-radius: 6px; color: #fff; font-size: 0.85rem; font-weight: 600;">AKTU Code: <strong style="color: #f0c466;">048</strong></span>
+          <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.4rem 0.85rem; border-radius: 6px; color: #fff; font-size: 0.85rem; font-weight: 600;">CSJMU Code: <strong style="color: #f0c466;">VS</strong></span>
+          <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.4rem 0.85rem; border-radius: 6px; color: #fff; font-size: 0.85rem; font-weight: 600;">AICTE ID: <strong style="color: #fff;">1-5543171</strong></span>
+          <span style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 0.4rem 0.85rem; border-radius: 6px; color: #fff; font-size: 0.85rem; font-weight: 600;">ISO: <strong style="color: #fff;">9001:2000</strong></span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -67,6 +67,8 @@ streamforge-squad/
    ```
    MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/campusconnect?retryWrites=true&w=majority
    PORT=3000
+   GROQ_API_KEY=your-server-side-groq-api-key
+   GROQ_MODEL=openai/gpt-oss-20b
    ```
 
 4. Run the server:
@@ -83,6 +85,12 @@ streamforge-squad/
 | `MONGO_URI` | MongoDB connection string                     | Yes      |
 | `PORT`      | Port the server listens on (default: `3000`)  | No       |
 | `NODE_ENV`  | Set to `production` to enable secure cookies  | No       |
+| `GROQ_API_KEY` | Groq API key used only by the server for Campus AI | Yes, for AI |
+| `GROQ_MODEL` | Groq model for Campus AI (defaults to `openai/gpt-oss-20b`) | No |
+
+## Campus AI knowledge base
+
+Place the VSICS source files in `knowledge/` before starting the server. Campus AI reads every `.json` and `.pdf` file in that directory, splits their content into searchable chunks, retrieves the most relevant chunks for a student's question, and sends only those chunks to the AI model. The browser never receives the API key.
 
 ## API Routes
 

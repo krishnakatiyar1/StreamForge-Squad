@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholarships & Downloads | VSICS CampusConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .download-hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #112e4d 100%);
+        color: #ffffff;
+        padding: 3.5rem 2rem 3rem;
+        border-radius: 20px;
+        margin-bottom: 2.5rem;
+        box-shadow: 0 12px 35px rgba(15, 23, 42, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .download-kicker {
+        display: inline-block;
+        background: rgba(214, 164, 71, 0.2);
+        color: #f0c466;
+        border: 1px solid rgba(240, 196, 102, 0.3);
+        padding: 0.35rem 0.85rem;
+        border-radius: 30px;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .download-hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2rem, 3.8vw, 3.2rem);
+        font-weight: 800;
+        margin-bottom: 1rem;
+        color: #ffffff;
+        line-height: 1.2;
+      }
+
+      .scholarship-card {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        border: 2px solid #e2e8f0;
+        border-radius: 16px;
+        padding: 2.25rem;
+        margin-bottom: 3rem;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+      }
+
+      .scholarship-badge {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1e40af;
+        font-weight: 800;
+        font-size: 0.78rem;
+        padding: 0.3rem 0.75rem;
+        border-radius: 6px;
+        text-transform: uppercase;
+        margin-bottom: 0.8rem;
+      }
+
+      .scholarship-card h2 {
+        font-size: 1.75rem;
+        font-weight: 800;
+        color: #0f172a;
+        margin-bottom: 0.75rem;
+      }
+
+      .checklist-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 0.8rem 1.5rem;
+        margin: 1.25rem 0 1.75rem;
+        padding-left: 1.2rem;
+        color: #334155;
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      .download-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        gap: 1.5rem;
+        margin-bottom: 3.5rem;
+      }
+
+      .doc-card {
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 14px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .doc-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+        border-color: #cbd5e1;
+      }
+
+      .doc-icon {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+        display: inline-block;
+      }
+
+      .doc-card h3 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin-bottom: 0.5rem;
+      }
+
+      .doc-card p {
+        color: #64748b;
+        font-size: 0.9rem;
+        line-height: 1.55;
+        margin-bottom: 1.25rem;
+      }
+
+      .btn-download-pdf {
+        background: #112e4d;
+        color: #ffffff;
+        border: none;
+        padding: 0.6rem 1.25rem;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        width: fit-content;
+        transition: background 0.2s ease;
+      }
+
+      .btn-download-pdf:hover {
+        background: #1e3a5f;
+        color: #f0c466;
+      }
+
+      .footer-codes-bar {
+        background: #0f172a;
+        color: #94a3b8;
+        padding: 2.5rem 1.5rem;
+        margin-top: 4rem;
+        border-radius: 16px 16px 0 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+      }
+
+      .code-badge-group {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .code-chip {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        color: #ffffff;
+        font-size: 0.9rem;
+        font-weight: 600;
+      }
+
+      .code-chip strong {
+        color: #f0c466;
+      }
+    </style>
+  </head>
+  <body class="detail-page">
+    <header class="plain">
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <div style="display: flex; gap: 1rem; align-items: center;">
+        <a class="login-nav" href="/feedback" style="background: #112e4d; color: #fff !important; font-size: 0.85rem;">Feedback 💬</a>
+        <a href="/">← Back to home</a>
+      </div>
+    </header>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+      <!-- Hero Banner -->
+      <section class="download-hero">
+        <span class="download-kicker">📄 STUDENT WELFARE & OFFICIAL DOWNLOADS</span>
+        <h1>Scholarships & Official<br /><em>Document Center.</em></h1>
+        <p>
+          Access UP Samaj Kalyan Post-Matric Scholarship guidelines, download official admission forms, college prospectuses, mandatory AICTE disclosures, and background verification details.
+        </p>
+      </section>
+
+      <!-- Samaj Kalyan Scholarship Highlight Card -->
+      <section class="scholarship-card">
+        <span class="scholarship-badge">Govt. Scholarship Support</span>
+        <h2>Samaj Kalyan UP Post-Matric Scholarship Scheme</h2>
+        <p style="color: #475569; font-size: 1rem; line-height: 1.6;">
+          VSICS Kanpur assists eligible SC, ST, OBC, General, and EWS students enrolled in BCA, MCA, BBA, and MBA programs in applying for government fee reimbursement and stipends under the UP State Government Scholarship Scheme.
+        </p>
+
+        <h4 style="font-size: 1rem; font-weight: 700; color: #0f172a; margin-top: 1.25rem;">Mandatory Documents Checklist for Scholarship Application:</h4>
+        <ul class="checklist-grid">
+          <li>✓ Income Certificate (Aavya Patra)</li>
+          <li>✓ Caste Certificate (Jati Patra)</li>
+          <li>✓ Domicile Certificate (Nivas Patra)</li>
+          <li>✓ High School & Intermediate Marksheets</li>
+          <li>✓ Semester College Fee Receipt</li>
+          <li>✓ Aadhar-Linked Bank Account Passbook</li>
+          <li>✓ Enrollment / Roll Number Certificate</li>
+          <li>✓ Passport Size Photographs</li>
+        </ul>
+
+        <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center;">
+          <a class="btn gold" href="https://scholarship.up.gov.in" target="_blank" rel="noopener">Apply on UP Scholarship Portal ↗</a>
+          <a class="btn outline" href="/ai-assistant" style="color: #112e4d; border-color: #cbd5e1;">Ask Campus AI About Scholarship Rules →</a>
+        </div>
+      </section>
+
+      <!-- Downloads Section Title -->
+      <div class="section-title" style="margin-bottom: 1.5rem;">
+        <h2>Official Document Downloads</h2>
+        <p style="color: #64748b; font-size: 0.95rem;">Download official PDFs, forms, brochures, and compliance reports</p>
+      </div>
+
+      <!-- Downloads Grid -->
+      <div class="download-grid">
+
+        <!-- Card 1: Admission Form -->
+        <article class="doc-card">
+          <div>
+            <span class="doc-icon">📝</span>
+            <h3>Official Admission Form (PDF)</h3>
+            <p>Download the official VSICS Kanpur admission application form for BCA, MCA, BBA, and MBA admissions.</p>
+          </div>
+          <a class="btn-download-pdf" href="https://www.vsicskanpur.org/docs/admissionform.pdf" target="_blank">Download PDF 📥</a>
+        </article>
+
+        <!-- Card 2: College Brochure -->
+        <article class="doc-card">
+          <div>
+            <span class="doc-icon">📘</span>
+            <h3>College Prospectus & Brochure</h3>
+            <p>Comprehensive institute guide covering academic programs, faculty profiles, campus life, and fee structures.</p>
+          </div>
+          <a class="btn-download-pdf" href="https://www.vsicskanpur.org/docs/brochure.pdf" target="_blank">Download Brochure 📥</a>
+        </article>
+
+        <!-- Card 3: Mandatory Disclosure -->
+        <article class="doc-card">
+          <div>
+            <span class="doc-icon">🏛️</span>
+            <h3>Mandatory AICTE Disclosure</h3>
+            <p>Official AICTE mandatory disclosure document containing institution approval details, faculty list, and intake capacity.</p>
+          </div>
+          <a class="btn-download-pdf" href="https://www.vsicskanpur.org/md.pdf" target="_blank">Download Disclosure 📥</a>
+        </article>
+
+        <!-- Card 4: Document Verification Guidelines -->
+        <article class="doc-card">
+          <div>
+            <span class="doc-icon">🔍</span>
+            <h3>Document Verification Guidelines</h3>
+            <p>Background verification instructions for employers & agencies (Verification Fee: ₹ 1,000 | Current A/C: 6465173743).</p>
+          </div>
+          <a class="btn-download-pdf" href="https://www.vsicskanpur.org/docs/dvc.pdf" target="_blank">Download DVC PDF 📥</a>
+        </article>
+
+        <!-- Card 5: Placement Report 2025 -->
+        <article class="doc-card">
+          <div>
+            <span class="doc-icon">📊</span>
+            <h3>Placement Progress Report 2025</h3>
+            <p>Detailed placement statistics report, recruiting companies list, package breakdowns, and alumni records.</p>
+          </div>
+          <a class="btn-download-pdf" href="https://www.vsicskanpur.org/placement/ProgressReport.pdf" target="_blank">Download Report 📥</a>
+        </article>
+
+        <!-- Card 6: Anti-Ragging Affidavit -->
+        <article class="doc-card">
+          <div>
+            <span class="doc-icon">🛡️</span>
+            <h3>Anti-Ragging Committee Guidelines</h3>
+            <p>UGC Anti-Ragging compliance policy, committee members, and 24x7 Student Welfare Helpline numbers.</p>
+          </div>
+          <a class="btn-download-pdf" href="https://www.vsicskanpur.org/docs/antiragging.pdf" target="_blank">Download Policy 📥</a>
+        </article>
+
+      </div>
+    </main>
+
+    <!-- Footer Credentials Widget -->
+    <footer style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem 2rem;">
+      <div class="footer-codes-bar">
+        <div>
+          <a class="logo" href="/" style="color: #fff;"><b>C</b> Campus<span style="color: #f0c466;">Connect</span></a>
+          <p style="color: #94a3b8; font-size: 0.85rem; margin-top: 0.3rem;">Dr. Virendra Swarup Institute of Computer Studies, Kanpur</p>
+        </div>
+
+        <div class="code-badge-group">
+          <div class="code-chip">AKTU Code: <strong>048</strong> (MCA/MBA)</div>
+          <div class="code-chip">CSJMU Code: <strong>VS</strong> (BCA/BBA)</div>
+          <div class="code-chip">AICTE ID: <strong>1-5543171</strong></div>
+          <div class="code-chip">ISO Certified: <strong>9001:2000</strong></div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

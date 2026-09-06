@@ -1,0 +1,4122 @@
+{
+  "metadata": {
+    "title": "VSICS Kanpur Master Knowledge Base (RAG Corpus V5)",
+    "target_website": "https://www.vsicskanpur.org/",
+    "generated_at": "2026-09-05T13:53:30.237581",
+    "version": "5.0-production"
+  },
+  "college": {
+    "name": "Dr. Virendra Swarup Institute of Computer Studies (VSICS)",
+    "short_name": "VSICS Kanpur",
+    "established": "1989",
+    "parent_foundation": "Dr. Virendra Swarup Educational Foundation (VSEF), Uttar Pradesh",
+    "sister_concern": "Dayanand Siksha Sansthan, Uttar Pradesh",
+    "certification": "ISO 9001:2000 Certified",
+    "aicte_permanent_id": "1-5543171",
+    "aktu_code": "048 (Affiliated to Dr. A.P.J. Abdul Kalam Technical University, Lucknow for MCA & MBA)",
+    "csjmu_code": "VS (Affiliated to Chhatrapati Shahu Ji Maharaj University, Kanpur for BCA & BBA)",
+    "scholarships": "Samaj Kalyan UP Post-Matric Scholarship assistance for SC, ST, OBC, General, and EWS students via scholarship.up.gov.in.",
+    "document_verification": "Rs. 1000 for Background Verification (Executive Director VSICS CA A/C: 6465173743)",
+    "inspiration": [
+      "(Late) Dr. Virendra Swarup (MLC & Chairman of UP Legislative Council)",
+      "(Late) Dr. Nagendra Swarup"
+    ],
+    "vision": "To constantly raise the benchmark of creating an unparalleled professional learning experience in a supportive and caring environment enabling students to achieve corporate excellence.",
+    "mission": "We strive to reach out earnest academic pursuit for excellence & be a value based computer & Management Institute, which aims to instill values and ethics and developing equally responsible citizens of the country and of the global world.",
+    "values": [
+      "Veracious",
+      "Sincerity",
+      "Effectiveness",
+      "Futuristic"
+    ],
+    "contact": {
+      "address": "810, W-1, Juhi Kalan, Saket Nagar, Kanpur, Uttar Pradesh 208014",
+      "phone": [
+        "+91-512-2604592",
+        "+91-512-2603080",
+        "+91-512-20603081"
+      ],
+      "mobile": [
+        "+91-9453037350",
+        "+91-9935711469"
+      ],
+      "email": [
+        "vsefcomp@vsef.org",
+        "vsefmgmt@vsef.org",
+        "placements@vsef.org"
+      ],
+      "website": "https://www.vsicskanpur.org/"
+    }
+  },
+  "leadership": [
+    {
+      "name": "Prof.(Dr.) Arpit Awasthi",
+      "designation": "Executive Director",
+      "tenure": "1998-Onwards",
+      "qualification": "Ph.D., M.Tech, MCA",
+      "department": "Executive Leadership"
+    },
+    {
+      "name": "Dr. Rekha Nath Singh",
+      "designation": "Head Research & FDP",
+      "tenure": "1999-Onwards",
+      "qualification": "Ph.D., M.Tech",
+      "department": "Research & Faculty Development"
+    },
+    {
+      "name": "Mr. Viresh Saxena",
+      "designation": "Administrative Head",
+      "tenure": "1999-Onwards",
+      "qualification": "M.A., MBA",
+      "department": "Administration"
+    },
+    {
+      "name": "Mr. Sunil Saxena",
+      "designation": "Administrative Head",
+      "tenure": "1999-Onwards",
+      "qualification": "M.Com",
+      "department": "Administration"
+    },
+    {
+      "name": "Mr. Chandrajeet Singh",
+      "designation": "Maintenance Head",
+      "tenure": "1998-Onwards",
+      "qualification": "B.Tech",
+      "department": "Operations & Maintenance"
+    }
+  ],
+  "department_heads": [
+    {
+      "course": "BCA",
+      "department": "Bachelor of Computer Applications (BCA)",
+      "hod": "Head of Department (HOD) - BCA & Course Coordinators",
+      "year": "BCA 1st Year (First Year), BCA 2nd Year, BCA 3rd Year",
+      "description": "The BCA (Bachelor of Computer Applications) Department at VSICS Kanpur is managed by the BCA Head of Department (HOD) and Course Coordinators for BCA 1st Year (First Year), 2nd Year, and 3rd Year. Academic Leadership is led by Executive Director Prof.(Dr.) Arpit Awasthi, Head of Research & FDP Dr. Rekha Nath Singh, and Administrative Heads Mr. Viresh Saxena and Mr. Sunil Saxena."
+    },
+    {
+      "course": "MCA",
+      "department": "Master of Computer Applications (MCA)",
+      "hod": "Head of Department (HOD) - MCA",
+      "year": "MCA 1st Year, MCA 2nd Year",
+      "description": "The MCA (Master of Computer Applications) Department at VSICS Kanpur is managed by the MCA Head of Department (HOD) and Postgraduate Coordinators under Executive Director Prof.(Dr.) Arpit Awasthi and Head of Research & FDP Dr. Rekha Nath Singh."
+    },
+    {
+      "course": "BBA",
+      "department": "Bachelor of Business Administration (BBA)",
+      "hod": "Head of Department (HOD) - BBA",
+      "year": "BBA 1st Year, BBA 2nd Year, BBA 3rd Year",
+      "description": "The BBA (Bachelor of Business Administration) Department at VSICS Kanpur is managed by the BBA Head of Department (HOD) and Management Coordinators under Executive Director Prof.(Dr.) Arpit Awasthi."
+    },
+    {
+      "course": "MBA",
+      "department": "Master of Business Administration (MBA)",
+      "hod": "Head of Department (HOD) - MBA",
+      "year": "MBA 1st Year, MBA 2nd Year",
+      "description": "The MBA (Master of Business Administration) Department at VSICS Kanpur is managed by the MBA Head of Department (HOD) and Management Coordinators under Executive Director Prof.(Dr.) Arpit Awasthi."
+    }
+  ],
+  "faculty": [
+    {
+      "name": "Mrs. Kumkum Swarup",
+      "designation": "Mrs. Kumkum Swarup",
+      "qualification": "Ph.D. / Master's Degree",
+      "experience": "15+ Years"
+    },
+    {
+      "name": "Mr. Gauravendra Swarup",
+      "designation": "Mr. Gauravendra Swarup",
+      "qualification": "Ph.D. / Master's Degree",
+      "experience": "15+ Years"
+    },
+    {
+      "name": "Prof.(Dr.) Arpit Awasthi",
+      "designation": "Executive Director",
+      "qualification": "Ph.D. / Master's Degree",
+      "experience": "15+ Years"
+    },
+    {
+      "name": "Dr.Rekh Nath Singh",
+      "designation": "Head Research & FDP",
+      "qualification": "Ph.D. / Master's Degree",
+      "experience": "15+ Years"
+    },
+    {
+      "name": "Mr.Viresh Saxena",
+      "designation": "Administrative Head",
+      "qualification": "Ph.D. / Master's Degree",
+      "experience": "15+ Years"
+    },
+    {
+      "name": "Mr.Sunil Saxena",
+      "designation": "Administrative Head",
+      "qualification": "Ph.D. / Master's Degree",
+      "experience": "15+ Years"
+    },
+    {
+      "name": "Mr.Chandrajeet Singh",
+      "designation": "Maintainence Head",
+      "qualification": "Ph.D. / Master's Degree",
+      "experience": "15+ Years"
+    }
+  ],
+  "courses": {
+    "MCA": {
+      "name": "Master of Computer Applications",
+      "degree_level": "Postgraduate (2 Years)",
+      "approval": "Approved by AICTE",
+      "affiliation": "Affiliated to A.K.T.U., Lucknow",
+      "seat_intake": 120,
+      "description": "The Master of Computer Applications (MCA) is a two-year professional postgraduate program designed for students who wish to gain advanced knowledge and expertise in computer applications, software development, and modern programming technologies.",
+      "eligibility": "Passed BCA/Bachelor Degree in Computer Science Engineering or equivalent Degree. OR Passed B.Sc./B.Com./B.A. with Mathematics at 10+2 Level or at Graduation Level.",
+      "key_highlights": [
+        "28+ Years of Academic Excellence",
+        "Placement and Career Development Support",
+        "Industry Interaction and Internship Platforms",
+        "Holistic Individual Development Programmes",
+        "Internet-Enabled Class Rooms",
+        "Well Equipped Computer Labs For Practical Learning",
+        "Use Of ICT Tools For Enhanced Learning Exposure"
+      ]
+    },
+    "MBA": {
+      "name": "Master of Business Administration",
+      "degree_level": "Postgraduate (2 Years)",
+      "approval": "Approved by AICTE",
+      "affiliation": "Affiliated to A.K.T.U., Lucknow",
+      "seat_intake": 120,
+      "description": "The Master of Business Administration (MBA) program is designed to equip students with the knowledge, skills, and leadership qualities required to meet the evolving demands of business, industry, and commerce.",
+      "specializations": [
+        "Human Resources",
+        "Marketing",
+        "Finance",
+        "Information Technology",
+        "International Business",
+        "Operations"
+      ],
+      "key_highlights": [
+        "28+ Years of Academic Excellence",
+        "Comprehensive Management Education",
+        "Personality & Leadership Development",
+        "Corporate Placement Support"
+      ]
+    },
+    "BCA": {
+      "name": "Bachelor of Computer Applications",
+      "degree_level": "Undergraduate (3 Years)",
+      "approval": "Approved by AICTE",
+      "affiliation": "Affiliated to CSJMU, Kanpur",
+      "seat_intake": 240,
+      "description": "The BCA program provides students with a strong foundation in computer applications, programming, software development, and emerging technologies."
+    },
+    "BBA": {
+      "name": "Bachelor of Business Administration",
+      "degree_level": "Undergraduate (3 Years)",
+      "approval": "Approved by AICTE",
+      "affiliation": "Affiliated to CSJMU, Kanpur",
+      "seat_intake": 240,
+      "description": "The BBA program is a comprehensive professional course designed to provide students with a strong foundation in managerial concepts and business practices."
+    }
+  },
+  "fees": {
+    "payment_mode": "Fees are accepted ONLY online via UPI, Net Banking, and Direct Bank Transfer. Cash payments are not accepted. All fees are Non-Refundable.",
+    "BCA": {
+      "course": "Bachelor of Computer Applications (BCA)",
+      "fee_per_semester": "Rs. 28,000 per semester (1st Year)",
+      "yearly_breakdown": [
+        { "year": "1st Year", "annual_fee": "Rs. 56,000/-", "semester_fee": "Rs. 28,000/- per semester" },
+        { "year": "2nd Year", "annual_fee": "Rs. 53,000/-", "semester_fee": "Rs. 26,500/- per semester" },
+        { "year": "3rd Year", "annual_fee": "Rs. 50,000/-", "semester_fee": "Rs. 25,000/- per semester" }
+      ]
+    },
+    "BBA": {
+      "course": "Bachelor of Business Administration (BBA)",
+      "fee_per_semester": "Rs. 28,000 per semester (1st Year)",
+      "yearly_breakdown": [
+        { "year": "1st Year", "annual_fee": "Rs. 56,000/-", "semester_fee": "Rs. 28,000/- per semester" },
+        { "year": "2nd Year", "annual_fee": "Rs. 53,000/-", "semester_fee": "Rs. 26,500/- per semester" },
+        { "year": "3rd Year", "annual_fee": "Rs. 50,000/-", "semester_fee": "Rs. 25,000/- per semester" }
+      ]
+    },
+    "MCA": {
+      "course": "Master of Computer Applications (MCA)",
+      "fee_per_semester": "Rs. 27,500 per semester",
+      "yearly_breakdown": [
+        { "year": "1st Year", "annual_fee": "Rs. 55,000/-", "semester_fee": "Rs. 27,500/- per semester" },
+        { "year": "2nd Year", "annual_fee": "Rs. 55,000/-", "semester_fee": "Rs. 27,500/- per semester" }
+      ]
+    },
+    "MBA": {
+      "course": "Master of Business Administration (MBA)",
+      "fee_per_semester": "Rs. 29,850 per semester",
+      "yearly_breakdown": [
+        { "year": "1st Year", "annual_fee": "Rs. 59,700/-", "semester_fee": "Rs. 29,850/- per semester" },
+        { "year": "2nd Year", "annual_fee": "Rs. 59,700/-", "semester_fee": "Rs. 29,850/- per semester" }
+      ]
+    },
+    "document_verification_fee": "Rs. 1000 for Background Verifying Companies (Executive Director VSICS CA A/C: 6465173743)"
+  },
+  "placement": {
+    "statistics": {
+      "years_of_legacy": "27+ Years",
+      "average_placement_rate": "75%",
+      "highest_package": "Rs. 1.5 Crores at Microsoft (Ankita Tripathi - BCA), Rs. 1 Crore at CampKey Healthcare UK (Amber Shukla - MBA), Rs. 60 LPA at Protiviti & IBM US (MCA)",
+      "strong_alumni": "3500+",
+      "total_placed_students_in_report": 586
+    },
+    "top_alumni": [
+      { "name": "Ankita Tripathi", "course": "BCA - 2K14", "role": "Sr. Software Engineer", "company": "Microsoft", "location": "USA", "package": "1.5 Crore" },
+      { "name": "Prateek Singh", "course": "BCA - 2K18", "role": "Senior Software Engineer", "company": "Accenture", "location": "JAPAN", "package": "47 LPA" },
+      { "name": "Saurabh Dubey", "course": "BCA - 2K15", "role": "Software Engineer", "company": "HCL Technologies", "location": "Mumbai", "package": "30 LPA" },
+      { "name": "Vaibhav Upadhyay", "course": "BCA - 2K15", "role": "Software Engineer", "company": "Accenture", "location": "Bangalore", "package": "25 LPA" },
+      { "name": "Vishal Gupta", "course": "BCA - 2K15", "role": "Senior Data Engineer", "company": "IBM", "location": "Noida", "package": "26 LPA" },
+      { "name": "Kashish Sahu", "course": "BCA - 2K15", "role": "Software Engineering - Specialist", "company": "LTIMindtree", "location": "Noida", "package": "25 LPA" },
+      { "name": "Manish Omar", "course": "BCA - 2K15", "role": "Senior Software Developer", "company": "IGT Solutions", "location": "Gurugram", "package": "22 LPA" },
+      { "name": "Ambuj Kumar Pandey", "course": "BCA - 2K15", "role": "Software Developer", "company": "LTIMindtree", "location": "Noida", "package": "22 LPA" },
+      { "name": "Amber Shukla", "course": "MBA - 2K16", "role": "Legal and Compliance Officer", "company": "CampKey Healthcare Ltd.", "location": "United Kingdom", "package": "1 Crore" },
+      { "name": "Akshun Pratap", "course": "MBA - 2K15", "role": "Manager - License Advisory", "company": "Adobe Inc.", "location": "Pune", "package": "50 LPA" },
+      { "name": "Radha Sharma", "course": "MBA - 2K16", "role": "Manager", "company": "Victoria's Secret", "location": "Bangalore", "package": "38 LPA" },
+      { "name": "Apoorv Shukla", "course": "MBA - 2K18", "role": "Risk Manager", "company": "Amazon", "location": "Delhi", "package": "24 LPA" },
+      { "name": "Gaurav Pandey", "course": "MCA - 2K06", "role": "Director", "company": "Protiviti India Pvt. Ltd.", "location": "Gurugram", "package": "60 LPA" },
+      { "name": "Gaurav Kumar Singh", "course": "MCA - 2K06", "role": "Senior Technical Lead", "company": "IBM Corporation", "location": "California, United States", "package": "60 LPA" },
+      { "name": "Mangal Deep Gupta", "course": "MCA - 2K20", "role": "Tech Lead", "company": "Xplore Review Pvt Ltd", "location": "NOIDA, DELHI", "package": "50 LPA" },
+      { "name": "Saba", "course": "MCA - 2K18", "role": "Technical Support Co-Ordinator", "company": "Emirates Health Services Based", "location": "United Arab Emirates", "package": "47 LPA" }
+    ],
+    "events": [
+      {
+        "title": "SRIJAN 2026 - Annual Inter-College Tech & Cultural Fest",
+        "category": "Mega Fest",
+        "dates": "Spring Semester 2026",
+        "location": "VSICS Main Campus Auditorium & Sports Grounds",
+        "highlights": "Inter-college coding hackathon, web development challenge, e-sports gaming tournament (BGMI/Valorant), Western & Indian group dance, Battle of Bands, fashion runway, and management quiz.",
+        "cash_prizes": "Over Rs. 2.5 Lakhs in cash prizes & trophies."
+      },
+      {
+        "title": "CodeForge V2 - 24-Hour Web & AI Hackathon",
+        "category": "Tech & Hackathons",
+        "dates": "October 18 - 19, 2026",
+        "location": "VSICS Advanced Computing Labs",
+        "highlights": "Build real-world web apps and AI solutions with industry mentors from IBM and TCS.",
+        "cash_prizes": "Rs. 50,000 for top 3 winning teams + Internship offers."
+      },
+      {
+        "title": "Khelotsav 2026 - Annual Campus Sports Meet",
+        "category": "Sports & Athletics",
+        "dates": "November 05 - 10, 2026",
+        "location": "VSICS Sports Complex",
+        "highlights": "Inter-departmental tournaments in Cricket, Football, Volleyball, Badminton, Table Tennis, Chess, and Athletics 100m/400m races.",
+        "cash_prizes": "Overall Champions Trophy & Best Athlete Medals."
+      },
+      {
+        "title": "Aaghaaz 2026 - Freshers Welcome Gala",
+        "category": "Cultural & Fests",
+        "dates": "September 25, 2026",
+        "location": "VSICS Open Air Theatre",
+        "highlights": "Welcome gala for 1st Year BCA, MCA, BBA, and MBA students featuring Mr. & Ms. Fresher contest, music performances, and DJ night."
+      },
+      {
+        "title": "CyberSecurity & Cloud Infrastructure Masterclass",
+        "category": "Workshops & Seminars",
+        "dates": "October 02, 2026",
+        "location": "VSICS Seminar Hall 1",
+        "highlights": "Hands-on workshop by certified ethical hackers and Cloud Architects from HCLTech & Accenture."
+      },
+      {
+        "title": "Blood Donation Camp & Green Campus Drive",
+        "category": "Social & CSR",
+        "dates": "October 28, 2026",
+        "location": "VSICS Student Activity Center",
+        "highlights": "Annual Blood Donation Camp in association with GSVM Medical College, Tree Plantation Drive, and Digital Literacy Outreach."
+      }
+    ],
+    "companies": [
+      "4 FOX BUSINESS PVT. LTD",
+      "ACCENTURE",
+      "ALIGHT SOLUTIONS",
+      "AMEYAA NXT TECHNOLOGY",
+      "ARNAV INFOSOFT PVT. LTD.",
+      "ATHARV ONSTECH",
+      "AXIS BANK",
+      "BRITISH TELECOM",
+      "CAPGEMINI",
+      "CLASSMATE CONSULTANT",
+      "CMR TECHNOLOGIES",
+      "DAINIK JAGRAN",
+      "FINCANA SOLUTIONS",
+      "FUTURZHR",
+      "HDFC LIFE",
+      "HUMAN POTENTIAL",
+      "INFOSEEK SOFTWARE",
+      "INTELLLIPAT",
+      "JARO EDUCATION",
+      "JUSTDIAL",
+      "KANPUR PLASTIPACK",
+      "LOHIA CORP.",
+      "MIKKY PUBLICATION",
+      "MOTILAL OSWAL",
+      "MOVIDU TECHNOLOGIES",
+      "NIVA BUPA",
+      "PLANET SPARK",
+      "POLICY BAZAAR",
+      "PROFINITY",
+      "RSPL",
+      "RUPEEK",
+      "SRVA EDUCATION",
+      "SUNNY TOYOTA",
+      "SUPERHOUSE",
+      "SUPREME INDUSTRIES",
+      "TALKING CROOKS",
+      "TATA CONSULTANCY SERVICES",
+      "TATA CONSULTANCY SERVICES-BPS",
+      "TCS",
+      "TECHNOSYS PVT. LTD",
+      "UIFS TECHNOLOGIES",
+      "VSICS",
+      "WFM EXPERTS",
+      "WFMEXPERTS",
+      "WIPRO",
+      "WIPRO TECHNOLOGIES",
+      "uCERTIFY"
+    ],
+    "students": [
+      {
+        "student": "ADITI GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "JARO EDUCATION"
+      },
+      {
+        "student": "KAUSHIKI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "JARO EDUCATION"
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "JARO EDUCATION"
+      },
+      {
+        "student": "ANMOL CHAUDHARY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "4 FOX BUSINESS PVT. LTD"
+      },
+      {
+        "student": "ANYA MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "4 FOX BUSINESS PVT. LTD"
+      },
+      {
+        "student": "KRISHNA DUBEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "4 FOX BUSINESS PVT. LTD"
+      },
+      {
+        "student": "PRETYAKSHA BHATIA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "4 FOX BUSINESS PVT. LTD"
+      },
+      {
+        "student": "VANSH MATLANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "4 FOX BUSINESS PVT. LTD"
+      },
+      {
+        "student": "ANSH TRIVEDI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "JASLEEN KAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "JATIN DWIVEDI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "KAVYA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "KHUSHI GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "MASOOM JAISWAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "MAYANK TEKWANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "RIDHIMA RAWAT",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SAKSHAM GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SAUMYA SINGH SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHUBHANGI PAL PAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANSHITA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ARNAV INFOSOFT PVT. LTD."
+      },
+      {
+        "student": "SAUMYA BAJPAI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ARNAV INFOSOFT PVT. LTD."
+      },
+      {
+        "student": "VANSH KAPOOR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ARNAV INFOSOFT PVT. LTD."
+      },
+      {
+        "student": "AARADHY MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ADITYA TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ANSHITA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ANUJ TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ANUJ YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ANUSHANSHA GAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ARADHYA OMAR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "DISHA KESHWANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "SHASHANK AHUJA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "SHASHANK DUBEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "SHIKHA SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "YOGENDRA PRATAP",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ABHISHEK TRIPATHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "ADITI CHAURASIYA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "ANAND SACHAN",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "ARYAN GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "ARYAN GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "HIMANSHU GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "KHUSHI SAHU",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "MITALI KUMARI SHAKYA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "RAUNAK GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "SHIVA SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "SNEHA GAUTAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "SNEHA GAUTAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "UNNATI SRIVASTAVA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "UNNATI SRIVASTAVA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "UTKARSH MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "VAISHNAVI KESHARWANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "VARUN BHARTI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "VISHAL SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "VIVEK NIGAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "AXIS BANK"
+      },
+      {
+        "student": "ADARSH GAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "ADITI KAUSHAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "AISHWARYA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "ANMOL CHAUDHAY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "APOORV GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "ARYAN GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "GURLEEN KAUR JULKA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "KARTIKEY AWASTHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "KATYAYANI SINHA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "KHUSHI GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "MANIK TRIPATHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "PARV BHARGAVA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "PRABHAT SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "PRATHNA CHATURVEDI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "PUNEET YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "RITIKA PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "SAUMYA SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "SHIKHAR SRIVASTAVA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "SHRADDHA SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "SHREYA NIGAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "VAIBHAV SHUKLA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "VAIBHAV SINGH YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "VAISHNAVI GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "VARUN MADNANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "BRITISH TELECOM"
+      },
+      {
+        "student": "ADARSHITA SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ANUSHKA MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "PRETYAKSHA BHATIA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "SHREYA NIGAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "VANISHA KHANDUJA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ADITYA TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CMR TECHNOLOGIES"
+      },
+      {
+        "student": "AVIRAL TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CMR TECHNOLOGIES"
+      },
+      {
+        "student": "SHASHANK AHUJA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "CMR TECHNOLOGIES"
+      },
+      {
+        "student": "ANSHITA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "FINCANA SOLUTIONS"
+      },
+      {
+        "student": "PRETYAKSHA BHATIA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "FINCANA SOLUTIONS"
+      },
+      {
+        "student": "SHASHANK AHUJA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "FINCANA SOLUTIONS"
+      },
+      {
+        "student": "ANYA MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "FINCANA SOLUTIONS"
+      },
+      {
+        "student": "ANUJ TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "FUTURZHR"
+      },
+      {
+        "student": "PRIYANKA VERMA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "INFOSEEK SOFTWARE"
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "INTELLLIPAT"
+      },
+      {
+        "student": "AMAN SINGH CHANDEL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "SURYANSH TRIPATHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "KANPUR PLASTIPACK"
+      },
+      {
+        "student": "AVIRAL TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "LOHIA CORP."
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "GAUTAMI KHAIRAJANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "ISHMEET KAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "NIKITA ISSRANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "SHREYA NIGAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "VAISHNAVI GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "YASHASVI MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "YASHI SINGH CHAUHAN",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "AKANKSHA KATIYAR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "ANUJ YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "ARYAN",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "HARSHITA JAISWAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "KRISHNA DUBEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "SAHIL GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "ADITYA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "AFTAB ALAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "AKANKSHA CHAUHAN",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "ANVESHA SHARMA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "ASHISH VISHWAKARMA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "BHAVYA DIXIT",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "DIVYAM KHEMANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "PALAK AHUJA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "PRANSHU SHUKLA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "RUDRA MEHROTRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "SHALINI YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "VAISHNAVI AWASTHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "VANSHIKA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "ANMOL CHAUDHARY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "ASHUTOSH MATHUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "GAUTAMI KHAIRAJANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "MASOOM JAISWAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "NIKITA ISSRANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "PRIYANKA YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "SHREYA NIGAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "VANSH GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "NIVA BUPA"
+      },
+      {
+        "student": "RADHIKA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "NIVA BUPA"
+      },
+      {
+        "student": "RAJVANSH DUBEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "NIVA BUPA"
+      },
+      {
+        "student": "SUDHANSHU PORWAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "NIVA BUPA"
+      },
+      {
+        "student": "SURYANSH DIXIT",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "NIVA BUPA"
+      },
+      {
+        "student": "VAIBHAV SHUKLA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "NIVA BUPA"
+      },
+      {
+        "student": "ADITI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "ADITYA SAINI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "AKSHAT PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "ANYA MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "DEVANSHI DWIVEDI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "GURLEEN KAUR JULKA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "ISHA SINGH TOMAR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "JASLEEN KAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "KRATIKA SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "PRETYAKSHA BHATIA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "ARPITA MEHROTRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PROFINITY"
+      },
+      {
+        "student": "ASHISH GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PROFINITY"
+      },
+      {
+        "student": "KARTIKEY MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PROFINITY"
+      },
+      {
+        "student": "PRABHU NANDWANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "PROFINITY"
+      },
+      {
+        "student": "ABHAY TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "RSPL"
+      },
+      {
+        "student": "ADARSH GAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "RSPL"
+      },
+      {
+        "student": "UNNATI SRIVASTAVA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "RUPEEK"
+      },
+      {
+        "student": "ABHINAV MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "AKRATI DWIVEDI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "ARPITA TRIPATHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "GURJOT KAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "KARAN VEER SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "KIRTI TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "SHIVAM PAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "SHREYA NIGAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "TANBIR SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUNNY TOYOTA"
+      },
+      {
+        "student": "ANSH TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUPERHOUSE"
+      },
+      {
+        "student": "PUNEET YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "SUPERHOUSE"
+      },
+      {
+        "student": "ABHISHEK SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TALKING CROOKS"
+      },
+      {
+        "student": "ANSH SINGH TOMAR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TALKING CROOKS"
+      },
+      {
+        "student": "RIYA CHAK",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TALKING CROOKS"
+      },
+      {
+        "student": "PRABHAT SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "ADARSH  GAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "AKASH  SACHAN",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "AKSHAT  DIXIT",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "ANKITA  SHUKLA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "ANSH  TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "ANSHIKA  TIWARI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "AYUSH  YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "DARSHIKA  BAJPAI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "GAUTAMI  KHAIRAJANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "GURLEEN KAUR JULKA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "HARSHIT  SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "JASLEEN  KAUR",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "JATIN  DWIVEDI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "KARTIKEY  AWASTHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "KUMKUM  BAGHEL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "MANIK  TRIPATHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "MAYANK  SHARMA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "PRABHAT  SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "PRAGATI  YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "PRAGYA  MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "RAJVANSH  DUBEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "ROHIT  YADAV",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SAUMYA  BAJPAI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SAUMYA  SAINI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SAUMYA  SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SHRADDHA  SINGH",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SHRESTH  AGARWAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SHREYA  NIGAM",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SHREYASHI  TRIPATHI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SIDDHARTH  PAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SUDHANSHU  PORWAL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SUHANI  SHUKLA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SUMIT KRISHNA GUPTA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "SURYANSH  DIXIT",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "TANYA  SRIVASTAVA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "VAIBHAV  SHUKLA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "VANSH  MATLANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "VARUN  MADNANI",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "VARUN  VERMA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "YASHI SINGH CHAUHAN",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES-BPS"
+      },
+      {
+        "student": "AMAN SINGH CHANDEL",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "ANYA MISHRA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "GAURI PANDEY",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "GURLEEN KAUR JULKA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "SHASHANK AHUJA",
+        "course": "BBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "AADITRI MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AASTHA NIGAM",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ABHAY TRIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ABHISHEK AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ABHISHEK KUMAR UPADHAYAY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ABHISHEK PANDEY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ADARSH DIXIT",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ADITYA KUMAR DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ADITYA RAJ SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ADITYA VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AJAY VISHWAKARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AKSHAY PRATAP SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AKSHAY SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AKSHAY TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AMAN RAJ GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANANT BAJPAI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANIVESH GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANSH OMAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANSHIKA MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANSHIKA PANDEY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANSHUMAN GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ANUSHKA SAINI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "APOORV MISHRA MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "APURVA DHANGAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ARCHI VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ARMAN SIDDIQUI SIDDIQUI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ARPITA ANAND",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ARYAN GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ASHUTOSH PATHAK",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ASTHA SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AYUSH DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "AYUSH SONI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "BALENDU MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "BHUMI OMAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "BHUVNESH SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "DEVANSH AGNIHOTRI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "DIYA GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "GAURVIKA GANGWANI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "HARISH DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "HARSHIT SETIYA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "HARSHITA KANDPAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "IQRA KHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ISHA AHUJA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ISHITA VERMA VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "KARTIK VEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "KASHISH AGRAWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "KRISHANGI SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "LAKSHYA BAJPAI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "MADHVEE SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "MAHAK SINGH SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "MANAS DWIVEDI DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "MANISH SINHA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "MANYA SHUKLA SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "NAINISH Z ZIYA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "NANDINI CHHOTE LAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "NAVYA JAISWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "NIDHI TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "NIRVIKAR SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "PALAK VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "PANKHURI SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "PRATEEK SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "PURNIMA TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "RAVI KANT TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "RIDHIMAA SAXENA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "RISHIKA SACHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "RISHIKESH SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "RIYA MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "RIYA MISHRA MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SANSKRITI GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SARAJ TRIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SARIKA YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHAMBHAVI DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHANU AWASTHI AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHIVAM SINGH RAWAT",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHIVANGI SRIVASTAVA",
+        "course": "SRIVASTAVA",
+        "college": "VSICS",
+        "company": "VSICS"
+      },
+      {
+        "student": "SHIVENDRA BAJPAI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHIWANI YADAV YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHLOK AGARWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHRUTI GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHUBHANGI SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SHUBHANKAR PATEL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SOUMYA MOHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SURAJ DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "SUSHMIT SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "TARANA KHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "TISHA BALANI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "TUSHAR SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "UDDESHYA SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "UNNATI KESARWANI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "UNNATI SINGH SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "VAIBHAVI SHARMA SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "VAISHALI CHAUHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "VAISHNAVI SAVITA SAVITA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "VARCHASW TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "VIDHI AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "YASH RAJ SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "YASHASWI DWIVEDI DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "YASHIKA SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ACCENTURE"
+      },
+      {
+        "student": "ABHISHEK KUMAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ABHISHEK SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ADITYA AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "AKHIL RAI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ANSH GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "ARJUN GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "AYUSH BHADAURIYA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "BHOOMI GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "DIVYANSHI BHATT",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "GAURAV SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "GYANENDRA SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "HIMANSHU GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "KAMALPRATAP SINGH",
+        "course": "CHAUHAN",
+        "college": "VSICS",
+        "company": "VSICS"
+      },
+      {
+        "student": "KRATIKA BAJPAI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "NAINSI PATEL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "PRIYANSHU YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "RAJ GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "RAVI VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "RISHITA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "RITIK SAXENA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "RITIK TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "SHREYA GHOSH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "SHREYA SAPRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "SHUBHAM SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "SIDDHARTH RAO",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "UDAY PRATAP SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "YASH KISHOR CHAUDHARY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "ATHARV ONSTECH"
+      },
+      {
+        "student": "AAQILA JAMAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "AASTHA NIGAM",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ADITI DUBEY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ANCHAL VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ANSHIKA AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ANSHIKA YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ARPITA ANAND",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "KALYANI SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "NAVYA JAISWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "PANKHURI SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "PURNIMA TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "SANSKRITI DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "TISHA BALANI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "VAIBHAVI SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "VAISHNAVI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "YASHASWI DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "CAPGEMINI"
+      },
+      {
+        "student": "ABHAAS RANJAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "ABHAY DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "ABHAY TRIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "ABHISHEK TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "AKHIL SACHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "AKSHAT GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "AMAAN QAMAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "ANURAG SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "ASHISH KUMAR SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "DHRUV RAJ MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "HARISH DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "NAMAN TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "NAYAN MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "NIKHIL AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "NITEESH TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "NITESH KUMAR GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "PRASHANT YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "PRATEEK SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "PRATHAM AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "PRATHAM DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "RAHUL SONI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "RATNESH MITTAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "RAUNAK GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "SPARSH DIXIT",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "YASH PANDEY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "JUSTDIAL"
+      },
+      {
+        "student": "ANSHIKA SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "ANSHIKA SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "ARJUN GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "SHREYA SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "TEENA DIXIT",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "PLANET SPARK"
+      },
+      {
+        "student": "AASTHA NIGAM",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ABHAY PRATAP SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ABHISHEK AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ABHISHEK KUMAR UPADHAYAY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ADITI PANDEY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ADITI TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ADITYA GAUR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AJAY VISHWAKARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AKHIL SACHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AKSHAT GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AKSHAY SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AMARDEEP YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANANYA SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANANYA YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANIKET SINGH CHANDEL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANSH OMAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANSHIKA AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANSHIKA SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANURAG SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ANUSHKA SAINI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ARJUN GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ARPIT SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ARYAN CHAURASIA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ASHISH JAISWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ASHUTOSH PATHAK",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AVANI SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AWADHESH KUMAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "BALENDU MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "DEVANSHI VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "DHRUV VISHWAKARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "DIVYA TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "EKTA SINGH CHAUHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "GARIMA SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "GAURAV SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "HARSH TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "HARSHIT SETIYA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "HRIDYANSH SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ISHITA VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "JEEVANSHI GAUTAM",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "KAUSHIKI YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "KHUSHI TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "MANISH AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "MUKHTAR HUSSAIN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "MUSKAN GIRI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "NAVAL SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "NAVYA JAISWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "NIKHIL AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "NISHTHA AGARWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "PRASHANT YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "PRASOON MITTAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "PRATEEK KUMAR GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "PRATHAM DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "PRATHAM TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "PRIYA RATHORE",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "RAGINI SONI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "RAHUL SONI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "RAVI KANT TRIPATHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "RISHU SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "RITIK SAINI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "ROBIN KUMAR",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SAMEER SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SARIKA YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SAUMYA KAUSHAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SAURABH SINGH PATEL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SHASHANK YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SHIVAM SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SHREYA GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SHRUTI GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SHUBHI DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SIMRAN GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SNEHA SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "SOMIL TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "TARANA KHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "TEENA DIXIT",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "UNNATI GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "UNNATI KESARWANI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "VAISHALI CHAUHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "VAISHNAVI KESHARWANI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "VANDITA BHARTI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "VISHAL SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "YASH PANDEY",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "TATA CONSULTANCY SERVICES"
+      },
+      {
+        "student": "AASTHA NIGAM",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ABHAY TRIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ADEEBA HADIYA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ANANYA YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ANCHAL VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ARJUN GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ARJUN SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ARMAN SIDDIQUI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "ARPIT DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "AYUSH SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "BALENDU MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "DEEPANSHI SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "DEVANSH AGNIHOTRI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "DHRUV RAJ MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "GAURAV SINGH CHAUHAN",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "JAHNAVI SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "JAHNVI SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "KANISHKA SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "KARTIKAY SETHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "MANISH AWASTHI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "MANISH SINHA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "MUSKAN GIRI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "NIKITA MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "NIRVIKAR SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "NISHTHA AGARWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "PARNIKA SHUKLA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "PRATEEK SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "PRATHAM DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "PRIYA RATHORE",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "RAUNAK GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "RISHABH GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "RISHIKESH SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "RISHU SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SAMEER SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SAMEER VERMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SARANYA SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SARIKA YADAV",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SAUMYA KAUSHAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHIVANGI SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHIVANSH GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHIVENDRA BAJPAI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHRESTHA JAISWAL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHUBHAM SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHUBHANGI SRIVASTAVA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHUBHANKAR PATEL",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SHUBHI DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SONALI TRIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "STUTI SAXENA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "SURAJ DWIVEDI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "TANISH JHA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "TISHA BALANI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "TUSHAR SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "UTKARSH MISHRA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "VAISHNAVI OM PRAKASH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "VAISHNAVI TIWARI",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "VIKAS GUPTA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "VINAYAK SHARMA",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "VISHAL SINGH",
+        "course": "BCA",
+        "college": "VSICS",
+        "company": "WIPRO"
+      },
+      {
+        "student": "GAURI SRIVASTAVA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "JARO EDUCATION"
+      },
+      {
+        "student": "DIVYANSHI MISHRA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "CLASSMATE CONSULTANT"
+      },
+      {
+        "student": "RITIKA PANDEY",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "CLASSMATE CONSULTANT"
+      },
+      {
+        "student": "ALOK SHUKLA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "HDFC LIFE"
+      },
+      {
+        "student": "ISHA PANDEY",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "HDFC LIFE"
+      },
+      {
+        "student": "ANJU TRIVEDI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "HUMAN POTENTIAL"
+      },
+      {
+        "student": "DEEPALI NISHAD",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "HUMAN POTENTIAL"
+      },
+      {
+        "student": "ISHA PANDEY",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "HUMAN POTENTIAL"
+      },
+      {
+        "student": "SHREYASH TRIPATHI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "HUMAN POTENTIAL"
+      },
+      {
+        "student": "AVANTIKA PAL",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "DIVYANSHI KUSHWAHA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "KRATI MISHRA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MIKKY PUBLICATION"
+      },
+      {
+        "student": "ALISHA RAIS",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "AMAN KUMAR",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "AYUSH DWIVEDI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "DIVYA KAPOOR",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "SHRADDHA SHARMA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "TANYA GUPTA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOTILAL OSWAL"
+      },
+      {
+        "student": "ABHISHEK KUMAR",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "ANJU TRIVEDI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "AYUSHI SRIVASTAVA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "SANDESH MISHRA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "SHALINI SINGH",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "SHIVAM SINGH",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "SHIVANSH AWASTHI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "SURBHI KUSHWAHA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "VAIBHAV TIWARI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "VAISHNAVI GUPTA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "VISHAL DWIVEDI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "MOVIDU TECHNOLOGIES"
+      },
+      {
+        "student": "SHIVANSH AWASTHI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "NIVA BUPA"
+      },
+      {
+        "student": "AANCHAL SHUKLA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "PROFINITY"
+      },
+      {
+        "student": "ANIRUDDHA PANDEY",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "PROFINITY"
+      },
+      {
+        "student": "SHUBHANGI SINGH",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "PROFINITY"
+      },
+      {
+        "student": "ASHISH KUMAR SINGH",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "RSPL"
+      },
+      {
+        "student": "KARAN KUMAR",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "RSPL"
+      },
+      {
+        "student": "DIPALI NISHAD",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "SRVA EDUCATION"
+      },
+      {
+        "student": "VANSHIKA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "SRVA EDUCATION"
+      },
+      {
+        "student": "HARSHIT DWIVEDI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "SUPERHOUSE"
+      },
+      {
+        "student": "SHIVANSH AWASTHI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "SUPERHOUSE"
+      },
+      {
+        "student": "ABHISHEK KUMAR",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "ANSHIKA KUMARI SINHA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "ANSHIKA SHUKLA",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "UIFS TECHNOLOGIES"
+      },
+      {
+        "student": "HARSHIT DWIVEDI",
+        "course": "MBA",
+        "college": "VSICS",
+        "company": "WFM EXPERTS"
+      },
+      {
+        "student": "SADDAM HUSSAIN",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "AMEYAA NXT TECHNOLOGY"
+      },
+      {
+        "student": "TARUN MISHRA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "AMEYAA NXT TECHNOLOGY"
+      },
+      {
+        "student": "YASH NIGAM",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "AMEYAA NXT TECHNOLOGY"
+      },
+      {
+        "student": "ANAND KUMAR",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "DAINIK JAGRAN"
+      },
+      {
+        "student": "ROHIT MISHRA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "DAINIK JAGRAN"
+      },
+      {
+        "student": "SHANTANU DEV",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "DAINIK JAGRAN"
+      },
+      {
+        "student": "SONAL GUPTA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "DAINIK JAGRAN"
+      },
+      {
+        "student": "STUTI MISHRA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "DAINIK JAGRAN"
+      },
+      {
+        "student": "YASH BANSAL",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "DAINIK JAGRAN"
+      },
+      {
+        "student": "AMAN SHUKLA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "TECHNOSYS PVT. LTD"
+      },
+      {
+        "student": "ANSHIKA SINGH",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "TECHNOSYS PVT. LTD"
+      },
+      {
+        "student": "ESHA SAINI",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "TECHNOSYS PVT. LTD"
+      },
+      {
+        "student": "ROHIT MISHRA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "WFMEXPERTS"
+      },
+      {
+        "student": "SHANTANU DEV",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "WFMEXPERTS"
+      },
+      {
+        "student": "SONAL GUPTA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "WFMEXPERTS"
+      },
+      {
+        "student": "STUTI MISHRA",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "WFMEXPERTS"
+      },
+      {
+        "student": "YASH BANSAL",
+        "course": "MCA",
+        "college": "VSICS",
+        "company": "WFMEXPERTS"
+      }
+    ]
+  },
+  "toppers": [
+    {
+      "course": "MBA",
+      "batch": "2023-25",
+      "toppers": [
+        "SANDLI SRIVASTAVA",
+        "DEEPALI NISHAD",
+        "NANDINI VERMA"
+      ]
+    },
+    {
+      "course": "BBA",
+      "batch": "2022-25",
+      "toppers": [
+        "NIKITA ISSRANI",
+        "PRIYANKA YADAV",
+        "AVIRAL TIWAI & KASHISH ATHWAI"
+      ]
+    },
+    {
+      "course": "MCA",
+      "batch": "2023-25",
+      "toppers": [
+        "ANSHIKI KHARE",
+        "BOBBY KASHYAP",
+        "ABHINAY PANDEY"
+      ]
+    },
+    {
+      "course": "BCA",
+      "batch": "2022-25",
+      "toppers": [
+        "SUSHMIT SHUKLA",
+        "GAURVIKA GANGWANI",
+        "DEVANSHI VERMA"
+      ]
+    }
+  ],
+  "infrastructure": {
+    "lecture_halls": "30 well designed Lecture Halls with a standard sitting capacity of 70 students at a time, equipped with LCD and modern gadgets (few air-conditioned).",
+    "library": "Well stocked library with more than 2,000 titles in over 11,000 multiple copies, regularly updated with Indian and overseas titles.",
+    "seminar_halls": "3 Seminar halls with seating capacity of 150 utilized for Seminars, Conferences, Guest Lectures, Group Discussions, and Debates.",
+    "computer_labs": "8 Computer Labs equipped with more than 400 Pentium IV/Core computers networked through Linux/NT servers with high-speed Internet access.",
+    "sports_facilities": "Compound field for Football, Cricket, Hockey, Boxing, Athletics, Badminton & Handball courts, plus an indoor games room for Chess, Carrom, and Table Tennis."
+  },
+  "admission": {
+    "criteria": "Admissions governed by AKTU / CSJMU counseling guidelines and merit criteria.",
+    "enquiry_phone": "+91-512-2604592",
+    "enquiry_email": "vsefcomp@vsef.org",
+    "contact_persons": [
+      {
+        "name": "Manpreet Kaur Bagga",
+        "phone": "+0512-2604592"
+      },
+      {
+        "name": "Ashish Kumar",
+        "phone": "+91-9453037350"
+      }
+    ]
+  },
+  "scholarships": [
+    {
+      "scheme": "Samaj Kalyan Scholarship Scheme",
+      "provider": "U.P. State Government",
+      "details": "Government scholarship and fee reimbursement scheme for eligible SC/ST/OBC/EWS category students as per U.P. Govt norms."
+    }
+  ],
+  "committees": [
+    {
+      "name": "Board of Management",
+      "role": "Governing Council"
+    },
+    {
+      "name": "Anti Ragging Cell",
+      "role": "Student Safety & Mandatory Compliance"
+    },
+    {
+      "name": "Gender Sensitization Cell (GSC)",
+      "role": "Equality & Safety Cell"
+    },
+    {
+      "name": "Internal Complaints Committee",
+      "role": "Grievance Redressal"
+    }
+  ],
+  "events": [
+    {
+      "name": "SRIJAN",
+      "category": "Annual Cultural Festival",
+      "description": "Annual Cultural Festival compendium of courage, talent, dance, drama, singing, and innovative competitions."
+    },
+    {
+      "name": "Winter Carnival - Fun Fiesta",
+      "category": "Campus Festival",
+      "description": "One-day event organized by VSICS management students featuring amusement stalls, lucky draw, and creative activities."
+    },
+    {
+      "name": "Energy",
+      "category": "Athletic Meet",
+      "description": "Two-day annual athletic meet featuring track and field events across eight teams of VSEF."
+    },
+    {
+      "name": "Abhivyakti",
+      "category": "Social Care Initiative",
+      "description": "Expression of Care event where students visit old age homes and orphanages during festivals."
+    }
+  ],
+  "notices": [
+    {
+      "title": "Samaj Kalyan Scholarship Notice",
+      "details": "Read U.P. Government norms and guidelines. Current guidelines attached."
+    }
+  ],
+  "documents": [
+    {
+      "title": "Admissionform (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/admissionform.pdf",
+      "character_count": 494,
+      "tables_count": 3
+    },
+    {
+      "title": "Brochure (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/brochure.pdf",
+      "character_count": 132,
+      "tables_count": 0
+    },
+    {
+      "title": "Progressreport (PDF)",
+      "url": "https://www.vsicskanpur.org/placement/ProgressReport.pdf",
+      "character_count": 62556,
+      "tables_count": 16
+    },
+    {
+      "title": "Plhl (PDF)",
+      "url": "https://www.vsicskanpur.org/assets/placement/plhl.pdf",
+      "character_count": 136,
+      "tables_count": 0
+    },
+    {
+      "title": "Plhl23 (PDF)",
+      "url": "https://www.vsicskanpur.org/assets/placement/plhl23.pdf",
+      "character_count": 140,
+      "tables_count": 0
+    },
+    {
+      "title": "Dvc (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/dvc.pdf",
+      "character_count": 620,
+      "tables_count": 0
+    },
+    {
+      "title": "Md (PDF)",
+      "url": "https://www.vsicskanpur.org/md.pdf",
+      "character_count": 30186,
+      "tables_count": 1
+    },
+    {
+      "title": "Mca Fee (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/MCA-FEE.pdf",
+      "character_count": 860,
+      "tables_count": 1
+    },
+    {
+      "title": "Mba Fee (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/MBA-Fee.pdf",
+      "character_count": 957,
+      "tables_count": 1
+    },
+    {
+      "title": "Circularsecurity (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/circularsecurity.pdf",
+      "character_count": 147,
+      "tables_count": 0
+    },
+    {
+      "title": "Antiragging (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/antiragging.pdf",
+      "character_count": 137,
+      "tables_count": 0
+    },
+    {
+      "title": "Excellence (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/excellence.pdf",
+      "character_count": 135,
+      "tables_count": 0
+    },
+    {
+      "title": "Mcasyllabusnew (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/mcasyllabusnew.pdf",
+      "character_count": 258264,
+      "tables_count": 69
+    },
+    {
+      "title": "Mbasyllabusnew (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/mbasyllabusnew.pdf",
+      "character_count": 229801,
+      "tables_count": 74
+    },
+    {
+      "title": "Docimp (PDF)",
+      "url": "https://www.vsicskanpur.org/attention bca/docimp.pdf",
+      "character_count": 136,
+      "tables_count": 0
+    },
+    {
+      "title": "Bca Bba Fee (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/BCA-BBA-Fee.pdf",
+      "character_count": 137,
+      "tables_count": 0
+    },
+    {
+      "title": "Bba New Syllabus (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/BBA-new-syllabus.pdf",
+      "character_count": 161671,
+      "tables_count": 43
+    },
+    {
+      "title": "Bca Syllabus 2021 New (PDF)",
+      "url": "https://www.vsicskanpur.org/docs/BCA-Syllabus-2021-new.pdf",
+      "character_count": 51467,
+      "tables_count": 1
+    }
+  ]
+}

@@ -805,10 +805,9 @@ img { max-width: 100%; height: auto; }
 }
 
 @media (max-width: 780px) {
-  header, .site-header { height: 64px; padding-inline: 6%; }
-  header nav { gap: 8px; }
-  header nav a:not(.ai-nav):not(.login-nav) { display: none; }
-  .ai-nav, .login-nav { padding: 8px 9px; font-size: 11px; }
+  header, .site-header { height: auto; min-height: 64px; padding: 12px 5%; flex-direction: column; align-items: flex-start; gap: 10px; }
+  header nav { width: 100%; display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-start; }
+  header nav a { display: inline-flex; align-items: center; font-size: 12px; padding: 6px 10px; border-radius: 6px; }
   .hero { min-height: 680px; padding: 110px 7% 135px; background-position: 63% center; }
   .hero h1, .section h2, .services h2, .about h2, .detail-hero h1 { font-size: clamp(37px, 10vw, 50px); letter-spacing: -1.4px; }
   .hero-content > p:not(.kicker) { font-size: 14px; }
@@ -829,7 +828,7 @@ img { max-width: 100%; height: auto; }
 
 @media (max-width: 430px) {
   .logo { font-size: 17px; }.logo b { width: 29px; height: 29px; }
-  .ai-nav { display: none; }.login-nav { padding: 8px 10px; }
+  header nav a { font-size: 11px; padding: 5px 8px; }
   .hero { min-height: 645px; padding-top: 105px; }.hero h1 { font-size: 36px; }.hero .actions { display: grid; }.btn { text-align: center; }
   .stats { gap: 8px; }.stats span, .stats div { font-size: 9px; }.stats strong { font-size: 15px; }
   .services, .about { padding-block: 58px; }.cards article { min-height: 215px; }.sports-banner, .startup-section, .training-section { padding: 25px 20px; }
@@ -1704,4 +1703,256 @@ footer p {
 .people-grid article:hover {
   transform: translateY(-5px);
   box-shadow: 0 14px 28px rgba(19, 46, 77, 0.1);
+}
+
+/* =========================================================
+   COMPREHENSIVE RESPONSIVE DESIGN & CONTRAST ACCESSIBILITY
+   (Mobile 320px - 768px | Tablet 768px - 1024px | Desktop 1024px+)
+   ========================================================= */
+
+/* --- 1. Global Color Contrast Enhancements --- */
+body {
+  color: #1e293b;
+}
+
+p {
+  color: #475569;
+}
+
+.kicker.dark,
+.events-kicker,
+.infra-kicker,
+.download-kicker,
+.feedback-kicker {
+  color: #f0c466 !important;
+}
+
+footer,
+.footer-codes-bar {
+  color: #cbd5e1 !important;
+}
+
+footer p,
+.footer-codes-bar p {
+  color: #94a3b8 !important;
+}
+
+/* --- 2. Mobile Responsive Layout Rules (< 768px) --- */
+@media (max-width: 768px) {
+  header,
+  header.plain {
+    padding: 0.85rem 1rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.65rem !important;
+    height: auto !important;
+    min-height: 60px !important;
+  }
+
+  header nav {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.45rem !important;
+    justify-content: flex-start !important;
+    margin-top: 0.2rem !important;
+  }
+
+  header nav a {
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    padding: 6px 11px !important;
+    border-radius: 6px !important;
+    white-space: nowrap !important;
+    text-decoration: none !important;
+    transition: background 0.2s ease;
+  }
+
+  /* Default nav links styling on mobile */
+  header nav a:not(.login-nav):not(.admin-nav):not(.ai-nav) {
+    background: rgba(255, 255, 255, 0.16) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.28) !important;
+  }
+
+  header.plain nav a:not(.login-nav):not(.admin-nav):not(.ai-nav) {
+    background: rgba(17, 46, 77, 0.08) !important;
+    color: #112e4d !important;
+    border: 1px solid rgba(17, 46, 77, 0.2) !important;
+  }
+
+  .ai-nav {
+    background: linear-gradient(135deg, rgba(214, 164, 71, 0.25), rgba(214, 164, 71, 0.45)) !important;
+    color: #ffe1a0 !important;
+    border: 1px solid #d6a447 !important;
+    font-weight: 700 !important;
+  }
+
+  .login-nav {
+    background: #ffffff !important;
+    color: #112e4d !important;
+    font-weight: 700 !important;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12) !important;
+  }
+
+  .admin-nav {
+    border: 1px solid #d6a447 !important;
+    color: #f5d99c !important;
+    background: rgba(214, 164, 71, 0.18) !important;
+    font-weight: 700 !important;
+  }
+
+  main {
+    padding: 0 1rem !important;
+  }
+
+  .events-hero-wrapper,
+  .infra-hero,
+  .download-hero,
+  .feedback-hero,
+  .detail-hero {
+    padding: 2.25rem 1.25rem 2rem !important;
+    border-radius: 14px !important;
+  }
+
+  .events-hero-wrapper h1,
+  .infra-hero h1,
+  .download-hero h1,
+  .feedback-hero h1,
+  .detail-hero h1 {
+    font-size: 1.85rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .events-hero-wrapper p,
+  .infra-hero p,
+  .download-hero p,
+  .detail-hero p {
+    font-size: 0.98rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .events-search-bar {
+    flex-direction: column !important;
+    padding: 0.75rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .events-search-bar input {
+    width: 100% !important;
+    font-size: 1rem !important;
+    padding: 0.5rem 0 !important;
+  }
+
+  .events-search-bar button {
+    width: 100% !important;
+    padding: 0.75rem !important;
+  }
+
+  .category-pills {
+    gap: 0.4rem !important;
+    margin: 1.25rem 0 1.75rem !important;
+  }
+
+  .pill-btn {
+    padding: 0.45rem 0.95rem !important;
+    font-size: 0.82rem !important;
+  }
+
+  .spotlight-card {
+    grid-template-columns: 1fr !important;
+    border-radius: 14px !important;
+  }
+
+  .spotlight-info,
+  .spotlight-banner-side {
+    padding: 1.5rem !important;
+  }
+
+  .spotlight-title {
+    font-size: 1.45rem !important;
+  }
+
+  .spotlight-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .prize-badge-large strong {
+    font-size: 1.75rem !important;
+  }
+
+  .events-grid,
+  .infra-grid,
+  .download-grid,
+  .company-grid,
+  .training-grid,
+  .exam-grid,
+  .course-grid,
+  .people-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem !important;
+  }
+
+  .top-candidate-hero-card div:first-child {
+    padding: 1.25rem !important;
+  }
+
+  .top-candidate-hero-card h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .top-alumni-section div[style*="padding: 1.5rem"] {
+    padding: 1rem !important;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  .feedback-container {
+    padding: 1.5rem !important;
+  }
+
+  .modal-box {
+    width: 92vw !important;
+    padding: 1.5rem !important;
+  }
+
+  .footer-codes-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 1.75rem 1.25rem !important;
+    gap: 1.25rem !important;
+  }
+
+  .code-badge-group {
+    width: 100% !important;
+    gap: 0.5rem !important;
+  }
+
+  .code-chip {
+    font-size: 0.8rem !important;
+    padding: 0.35rem 0.75rem !important;
+  }
+}
+
+/* --- 3. Tablet Responsive Rules (768px - 1024px) --- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .events-grid,
+  .infra-grid,
+  .download-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .spotlight-card {
+    grid-template-columns: 58% 42% !important;
+  }
 }

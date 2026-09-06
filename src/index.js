@@ -6,18 +6,44 @@ const crypto = require("node:crypto");
 const fs = require("node:fs/promises");
 const path = require("node:path");
 const { MongoClient } = require("mongodb");
+const { answerQuestion } = require("./ai-service");
 
 const port = Number(process.env.PORT) || 3000;
 const publicDirectory = path.join(__dirname, "..", "public");
-const publicFiles = { "/styles.css": ["styles.css", "text/css; charset=utf-8"], "/assets/image.png": ["assets/image.png", "image/png"] };
-const pageRoutes = { "/": "index.html", "/events": "events.html", "/faculty": "faculty.html", "/exams": "exams.html", "/courses": "courses.html", "/fees": "fees.html", "/placements": "placements.html", "/login": "login.html", "/signup": "signup.html", "/apply": "apply.html", "/admin": "admin-login.html", "/admin/register": "admin-register.html", "/admin/dashboard": "admin-dashboard.html", "/admin/users": "admin-users.html", "/ai-assistant": "ai-assistant.html" };
+const publicFiles = {
+  "/styles.css": ["styles.css", "text/css; charset=utf-8"],
+  "/app.js": ["app.js", "application/javascript; charset=utf-8"],
+  "/assets/image.png": ["assets/image.png", "image/png"]
+};
+
+const pageRoutes = {
+  "/": "index.html",
+  "/events": "events.html",
+  "/faculty": "faculty.html",
+  "/exams": "exams.html",
+  "/courses": "courses.html",
+  "/fees": "fees.html",
+  "/placements": "placements.html",
+  "/feedback": "feedback.html",
+  "/infrastructure": "infrastructure.html",
+  "/downloads": "downloads.html",
+  "/login": "login.html",
+  "/signup": "signup.html",
+  "/apply": "apply.html",
+  "/admin": "admin-login.html",
+  "/admin/register": "admin-register.html",
+  "/admin/dashboard": "admin-dashboard.html",
+  "/admin/users": "admin-users.html",
+  "/ai-assistant": "ai-assistant.html"
+};
 
 // --- MongoDB ---
-const mongoClient = new MongoClient(process.env.MONGO_URI);
+const mongoClient = new MongoClient(process.env.MONGO_URI || "mongodb://localhost:27017/campusconnect");
 let usersCollection;
 let sessionsCollection;
 let applicationsCollection;
 let adminsCollection;
+let feedbackCollection;
 
 async function connectMongo() {
   await mongoClient.connect();
@@ -26,8 +52,9 @@ async function connectMongo() {
   sessionsCollection = db.collection("sessions");
   applicationsCollection = db.collection("applications");
   adminsCollection = db.collection("admins");
+  feedbackCollection = db.collection("feedback");
   await usersCollection.createIndex({ email: 1 }, { unique: true });
-  await sessionsCollection.createIndex({ expiresAt: 1 }, { expireAfterSeconds: 0 }); // auto-cleans expired sessions
+  await sessionsCollection.createIndex({ expiresAt: 1 }, { expireAfterSeconds: 0 });
   await applicationsCollection.createIndex({ createdAt: -1 });
   await adminsCollection.createIndex({ email: 1 }, { unique: true });
   console.log("MongoDB connected");
@@ -119,6 +146,27 @@ async function currentAdmin(request) {
 }
 
 async function api(request, response, pathname) {
+  if (pathname === "/api/feedback" && request.method === "POST") {
+    const { name = "", profession = "", feedback = "" } = await body(request);
+    const cleanName = name.trim() || "Anonymous";
+    const cleanProf = profession.trim() || "Student";
+    const cleanFeedback = feedback.trim();
+    if (!cleanFeedback) return sendJson(response, 400, { error: "Please enter your feedback or college information." });
+
+    const entry = { id: crypto.randomUUID(), name: cleanName, profession: cleanProf, feedback: cleanFeedback, createdAt: new Date().toISOString() };
+    if (feedbackCollection) {
+      await feedbackCollection.insertOne(entry);
+    }
+    console.log(`[FEEDBACK RECEIVED] From: ${cleanName} (${cleanProf}) - Feedback: ${cleanFeedback}`);
+    return sendJson(response, 201, { message: "Thank you for your contribution!" });
+  }
+
+  if (pathname === "/api/ai/chat" && request.method === "POST") {
+    if (!(await currentUser(request))) return sendJson(response, 401, { error: "Please log in to use Campus AI." });
+    const result = await answerQuestion((await body(request)).question);
+    return result.error ? sendJson(response, result.status, { error: result.error }) : sendJson(response, 200, { answer: result.answer, sources: result.sources });
+  }
+
   if (pathname === "/api/admin/register" && request.method === "POST") {
     const { email = "", password = "", credentialId = "" } = await body(request);
     const registrationId = process.env.ADMIN_REGISTRATION_ID || "";

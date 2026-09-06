@@ -34,20 +34,20 @@
           <div><strong>Campus AI</strong><small>● Online now</small></div>
           <span>•••</span>
         </div>
-        <div class="chat-body">
+        <div id="chat-body" class="chat-body" aria-live="polite">
           <div class="message">
             Hi! I’m Campus AI. What would you like to know today?<small
               >Just now</small
             >
           </div>
           <p class="try">TRY ASKING</p>
-          <button>When are the semester exams?</button
-          ><button>What courses are available?</button
-          ><button>Tell me about placement training</button
-          ><button>How can I pay my fees?</button>
+          <button type="button" class="suggestion">When are the semester exams?</button
+          ><button type="button" class="suggestion">What courses are available?</button
+          ><button type="button" class="suggestion">Tell me about placement training</button
+          ><button type="button" class="suggestion">How can I pay my fees?</button>
         </div>
         <div class="input">
-          <input placeholder="Ask anything about your college..." /><button>
+          <input id="question-input" placeholder="Ask anything about your college..." aria-label="Ask Campus AI" /><button id="send-question" type="button" aria-label="Send question">
             ↑
           </button>
         </div>
@@ -81,5 +81,6 @@
         location.href = "/login?next=%2Fai-assistant";
       };
     </script>
+    <script src="/app.js"></script>
   </body>
 </html>
