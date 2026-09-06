@@ -252,7 +252,7 @@ async function api(request, response, pathname) {
   return sendJson(response, 404, { error: "API route not found." });
 }
 
-http.createServer(async (request, response) => {
+async function requestHandler(request, response) {
   try {
     const url = new URL(request.url, `http://${request.headers.host || "localhost"}`);
     const pathname = url.pathname;
@@ -273,11 +273,28 @@ http.createServer(async (request, response) => {
     console.error(error);
     return sendJson(response, 500, { error: "Something went wrong. Please try again." });
   }
-}).listen(port, async () => {
-  try {
-    await connectMongo();
-  } catch (error) {
-    console.error("MongoDB connection failed; the site will run, but login and signup are unavailable.", error.message);
+}
+
+const server = http.createServer(requestHandler);
+
+if (require.main === module) {
+  server.listen(port, async () => {
+    try {
+      await connectMongo();
+    } catch (error) {
+      console.error("MongoDB connection failed; the site will run, but login and signup are unavailable.", error.message);
+    }
+    console.log(`Server listening at http://localhost:${port}`);
+  });
+}
+
+module.exports = async (req, res) => {
+  if (process.env.MONGO_URI && (!mongoClient.topology || !mongoClient.topology.isConnected())) {
+    try {
+      await connectMongo();
+    } catch (error) {
+      console.error("MongoDB connection failed", error.message);
+    }
   }
-  console.log(`Server listening at http://localhost:${port}`);
-});
+  return requestHandler(req, res);
+};
