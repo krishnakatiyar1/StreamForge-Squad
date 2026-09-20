@@ -108,9 +108,34 @@ function matches(password, stored) {
 function safeUser(user) { return { id: user.id, name: user.name, email: user.email }; }
 function isValidEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
 
+const memUsers = new Map();
+const memSessions = new Map();
+
+async function findUserByEmail(cleanEmail) {
+  if (usersCollection) {
+    try {
+      const dbUser = await usersCollection.findOne({ email: cleanEmail });
+      if (dbUser) return dbUser;
+    } catch {}
+  }
+  return memUsers.get(cleanEmail) || null;
+}
+
+async function saveUser(user) {
+  memUsers.set(user.email, user);
+  if (usersCollection) {
+    await usersCollection.insertOne(user);
+  }
+}
+
 async function createSession(userId) {
   const id = crypto.randomBytes(32).toString("hex");
-  await sessionsCollection.insertOne({ id, userId, expiresAt: new Date(Date.now() + 86_400_000) });
+  const expiresAt = new Date(Date.now() + 86_400_000);
+  const session = { id, userId, expiresAt };
+  memSessions.set(id, session);
+  if (sessionsCollection) {
+    try { await sessionsCollection.insertOne(session); } catch {}
+  }
   return id;
 }
 
@@ -133,16 +158,37 @@ function sameSecret(input, expected) {
 async function currentUser(request) {
   const sessionId = cookies(request).sessionId || "";
   if (!sessionId) return null;
-  const session = await sessionsCollection.findOne({ id: sessionId, expiresAt: { $gte: new Date() } });
+  let session = memSessions.get(sessionId);
+  if (session && session.expiresAt < new Date()) {
+    memSessions.delete(sessionId);
+    session = null;
+  }
+  if (!session && sessionsCollection) {
+    try { session = await sessionsCollection.findOne({ id: sessionId, expiresAt: { $gte: new Date() } }); } catch {}
+  }
   if (!session) return null;
-  return (await usersCollection.findOne({ id: session.userId })) || null;
+  if (usersCollection) {
+    try {
+      const user = await usersCollection.findOne({ id: session.userId });
+      if (user) return user;
+    } catch {}
+  }
+  for (const user of memUsers.values()) {
+    if (user.id === session.userId) return user;
+  }
+  return null;
 }
 
 async function currentAdmin(request) {
   const sessionId = cookies(request).adminSessionId || "";
   if (!sessionId) return false;
-  const session = await sessionsCollection.findOne({ id: sessionId, role: "admin", expiresAt: { $gte: new Date() } });
-  return Boolean(session);
+  if (sessionsCollection) {
+    try {
+      const session = await sessionsCollection.findOne({ id: sessionId, role: "admin", expiresAt: { $gte: new Date() } });
+      return Boolean(session);
+    } catch {}
+  }
+  return false;
 }
 
 async function api(request, response, pathname) {
@@ -221,22 +267,35 @@ async function api(request, response, pathname) {
     const { name = "", email = "", password = "" } = await body(request);
     const cleanName = name.trim();
     const cleanEmail = email.trim().toLowerCase();
-    if (!cleanName || !isValidEmail(cleanEmail) || password.length < 8) return sendJson(response, 400, { error: "Enter a name, valid email, and password of at least 8 characters." });
+    if (!cleanName || !isValidEmail(cleanEmail) || password.length < 8) {
+      return sendJson(response, 400, { error: "Please enter your name, a valid email/Gmail address, and a password of at least 8 characters." });
+    }
+    const existing = await findUserByEmail(cleanEmail);
+    if (existing) {
+      return sendJson(response, 409, { error: "An account with this email/Gmail address already exists. Please log in." });
+    }
     const user = { id: crypto.randomUUID(), name: cleanName, email: cleanEmail, passwordHash: hash(password), createdAt: new Date().toISOString() };
     try {
-      await usersCollection.insertOne(user);
+      await saveUser(user);
     } catch (error) {
-      if (error.code === 11000) return sendJson(response, 409, { error: "An account already exists for this email." });
+      if (error && (error.code === 11000 || (error.message && error.message.includes("E11000")))) {
+        return sendJson(response, 409, { error: "An account with this email/Gmail address already exists. Please log in." });
+      }
       throw error;
     }
-    return sendJson(response, 201, { user: safeUser(user) }, { "Set-Cookie": sessionCookie(await createSession(user.id)) });
+    const sessionId = await createSession(user.id);
+    return sendJson(response, 201, { user: safeUser(user) }, { "Set-Cookie": sessionCookie(sessionId) });
   }
 
   if (pathname === "/api/auth/login" && request.method === "POST") {
     const { email = "", password = "" } = await body(request);
-    const user = await usersCollection.findOne({ email: email.trim().toLowerCase() });
-    if (!user || !password || !matches(password, user.passwordHash)) return sendJson(response, 401, { error: "Incorrect email address or password." });
-    return sendJson(response, 200, { user: safeUser(user) }, { "Set-Cookie": sessionCookie(await createSession(user.id)) });
+    const cleanEmail = email.trim().toLowerCase();
+    const user = await findUserByEmail(cleanEmail);
+    if (!user || !password || !matches(password, user.passwordHash)) {
+      return sendJson(response, 401, { error: "Incorrect email address or password." });
+    }
+    const sessionId = await createSession(user.id);
+    return sendJson(response, 200, { user: safeUser(user) }, { "Set-Cookie": sessionCookie(sessionId) });
   }
 
   if (pathname === "/api/auth/me" && request.method === "GET") {
