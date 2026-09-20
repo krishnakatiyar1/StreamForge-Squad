@@ -8,8 +8,15 @@
   </head>
   <body class="detail-page">
     <header class="plain">
-      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a
-      ><a href="/">← Back to home</a>
+      <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav(this)" aria-label="Toggle Navigation Menu">☰ Menu</button>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/faculty">Faculty</a>
+        <a href="/courses">Courses</a>
+        <a href="/ai-assistant" class="ai-nav">✦ AI Assistant</a>
+        <a href="/feedback" class="login-nav">Feedback 💬</a>
+      </nav>
     </header>
     <main>
       <section class="detail-hero">
@@ -20,7 +27,7 @@
       <section class="detail-content">
         <div class="section-title">
           <h2>Faculty directory</h2>
-          <input placeholder="Search faculty or department" />
+          <input id="facultySearchInput" placeholder="Search faculty, designation, or qualification..." oninput="filterFaculty()" />
         </div>
         <div class="people-grid">
           <article >
@@ -411,5 +418,16 @@
 
       </section>
     </main>
+    <script src="/app.js"></script>
+    <script>
+      function filterFaculty() {
+        const query = (document.getElementById("facultySearchInput").value || "").toLowerCase().trim();
+        const articles = document.querySelectorAll(".people-grid article");
+        articles.forEach((card) => {
+          const text = card.textContent.toLowerCase();
+          card.style.display = text.includes(query) ? "" : "none";
+        });
+      }
+    </script>
   </body>
 </html>

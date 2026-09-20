@@ -9,10 +9,14 @@
   <body class="detail-page">
     <header class="plain">
       <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
-      <div style="display: flex; gap: 1rem; align-items: center;">
-        <a class="login-nav" href="/feedback" style="background: #112e4d; color: #fff !important; font-size: 0.85rem;">Feedback 💬</a>
-        <a href="/">← Back to home</a>
-      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav(this)" aria-label="Toggle Navigation Menu">☰ Menu</button>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/placements">Placements</a>
+        <a href="/ai-assistant" class="ai-nav">✦ AI Assistant</a>
+        <a href="/feedback" class="login-nav">Feedback 💬</a>
+        <a href="/apply" class="login-nav">Apply now</a>
+      </nav>
     </header>
     <main>
       <section class="detail-hero">
@@ -161,5 +165,6 @@
         </div>
       </div>
     </footer>
+    <script src="/app.js"></script>
   </body>
 </html>

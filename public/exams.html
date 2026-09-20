@@ -9,21 +9,27 @@
   <body class="detail-page">
     <header class="plain">
       <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
-      <a href="/">← Back to home</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav(this)" aria-label="Toggle Navigation Menu">☰ Menu</button>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/exams">Exams</a>
+        <a href="/courses">Courses</a>
+        <a href="/ai-assistant" class="ai-nav">✦ AI Assistant</a>
+        <a href="/feedback" class="login-nav">Feedback 💬</a>
+      </nav>
     </header>
     <main>
       <section class="detail-hero">
         <p class="kicker dark">EXAMINATION CELL</p>
         <h1>Stay prepared. Stay<br /><em>one step ahead.</em></h1>
         <p>
-          Find every internal, semester, university, practical, and viva
-          assessment in one clear examination plan.
+          Find every internal, sessional, pre-university test, practical, and viva assessment in one clear internal examination plan.
         </p>
       </section>
       <section class="detail-content">
         <div class="section-title">
-          <h2>Examination structure</h2>
-          <button>Current semester ▾</button>
+          <h2>College Internal Examination Structure</h2>
+          <button>Current Semester ▾</button>
         </div>
         <div class="exam-grid">
           <article>
@@ -37,53 +43,42 @@
             <span>02</span>
             <h3>CBT II</h3>
             <p>
-              Second Computer-Based Test to review progress before mid-semester
-              examinations.
+              Second Computer-Based Test to review progress before mid-term examinations.
             </p>
           </article>
           <article>
             <span>03</span>
-            <h3>Mid-Semester Exam</h3>
+            <h3>Mid-Semester / Sessional Exam</h3>
             <p>
-              Internal examination covering the first half of the semester
-              syllabus.
+              Internal examination covering the first half of the semester syllabus.
             </p>
           </article>
           <article>
             <span>04</span>
-            <h3>Semester Exam</h3>
+            <h3>Pre-University Test (PUT)</h3>
             <p>
-              College semester examination covering the full prescribed
-              syllabus.
+              Comprehensive internal mock examination conducted by the college before university exams.
             </p>
           </article>
           <article>
             <span>05</span>
-            <h3>University Final Exam</h3>
-            <p>
-              Final university examination conducted at the end of the semester.
-            </p>
-          </article>
-          <article>
-            <span>06</span>
             <h3>Viva & Practicals</h3>
             <p>
-              Practical lab assessments and viva voce evaluations for applicable
-              subjects.
+              Practical lab assessments and viva voce evaluations for applicable subjects.
             </p>
           </article>
         </div>
         <div class="exam-note">
           <span>!</span>
           <div>
-            <h3>Important reminder</h3>
+            <h3>Important Reminder</h3>
             <p>
-              Exact dates, examination halls, and hall tickets will be announced
-              by the examination cell before each assessment.
+              Internal exam dates, schedules, and seating arrangements are announced by the VSICS Examination Cell. Final semester degree exams are conducted directly by CSJMU / AKTU University.
             </p>
           </div>
         </div>
       </section>
     </main>
+    <script src="/app.js"></script>
   </body>
 </html>

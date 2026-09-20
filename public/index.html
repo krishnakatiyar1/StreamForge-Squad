@@ -15,6 +15,7 @@
   <body>
     <header>
       <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav(this)" aria-label="Toggle Navigation Menu">☰ Menu</button>
       <nav>
         <a href="#home">Home</a><a href="#services">Campus Life</a
         ><a href="#about">About</a
@@ -204,6 +205,7 @@
         </div>
       </div>
     </footer>
+    <script src="/app.js"></script>
     <script>
       const authAction = document.querySelector("#auth-action");
       fetch("/api/auth/me")

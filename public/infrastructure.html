@@ -144,10 +144,14 @@
   <body class="detail-page">
     <header class="plain">
       <a class="logo" href="/"><b>C</b> Campus<span>Connect</span></a>
-      <div style="display: flex; gap: 1rem; align-items: center;">
-        <a class="login-nav" href="/feedback" style="background: #112e4d; color: #fff !important; font-size: 0.85rem;">Feedback 💬</a>
-        <a href="/">← Back to home</a>
-      </div>
+      <button class="mobile-menu-btn" onclick="toggleMobileNav(this)" aria-label="Toggle Navigation Menu">☰ Menu</button>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/infrastructure">Infrastructure</a>
+        <a href="/ai-assistant" class="ai-nav">✦ AI Assistant</a>
+        <a href="/feedback" class="login-nav">Feedback 💬</a>
+        <a href="/apply" class="login-nav">Apply now</a>
+      </nav>
     </header>
 
     <main style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
@@ -156,7 +160,7 @@
         <span class="infra-kicker">🏛️ WORLD-CLASS INFRASTRUCTURE</span>
         <h1>State-of-the-Art Campus<br /><em>Facilities & Resources.</em></h1>
         <p>
-          Discover VSICS Kanpur's advanced computer laboratories, digital central library, 600-seater auditorium, transport fleet, and sports complex designed for academic excellence.
+          Discover VSICS Kanpur's advanced computer laboratories (500+ systems), digital central library, 600-seater auditorium, and sports grounds designed for academic excellence.
         </p>
       </section>
 
@@ -173,10 +177,10 @@
         <article class="infra-card">
           <div>
             <div class="infra-icon">💻</div>
-            <h3>500+ AC High-Tech Computer Labs</h3>
-            <p>Multiple air-conditioned computing centers equipped with high-performance desktop systems, dual OS (Linux & Windows), and high-speed optical fiber Internet.</p>
+            <h3>10+ AC High-Tech Computer Labs (500+ Systems)</h3>
+            <p>Multiple air-conditioned computing labs equipped with 500+ high-performance desktop systems, dual OS (Linux & Windows), and high-speed optical fiber Internet.</p>
             <ul class="infra-features">
-              <li>✓ Gigabit Internet Connection</li>
+              <li>✓ Gigabit Optical Fiber Connection</li>
               <li>✓ Advanced Software Suites (Oracle, Python, Java, R)</li>
               <li>✓ Dedicated AI & Data Analytics Lab</li>
             </ul>
@@ -211,35 +215,21 @@
           </div>
         </article>
 
-        <!-- Facility 4: Transport & Bus Fleet -->
-        <article class="infra-card">
-          <div>
-            <div class="infra-icon">🚌</div>
-            <h3>Transport & Bus Service</h3>
-            <p>Fleet of comfortable college buses providing safe daily commute coverage across Kanpur City, Saket Nagar, Juhi, Kalyanpur, Rawatpur, and suburbs.</p>
-            <ul class="infra-features">
-              <li>✓ GPS Tracked Fleet</li>
-              <li>✓ Experienced Professional Drivers</li>
-              <li>✓ Comprehensive Route Coverage</li>
-            </ul>
-          </div>
-        </article>
-
-        <!-- Facility 5: Sports Complex -->
+        <!-- Facility 4: Sports & Outdoor Grounds -->
         <article class="infra-card">
           <div>
             <div class="infra-icon">⚽</div>
-            <h3>Sports Complex & Gymkhana</h3>
-            <p>Spacious sports grounds for Cricket, Football, and Volleyball along with indoor facilities for Badminton, Table Tennis, Chess, and Carrom.</p>
+            <h3>Sports & Outdoor Grounds</h3>
+            <p>Spacious campus sports grounds for Cricket, Football, and Volleyball along with indoor games like Badminton, Table Tennis, and Chess.</p>
             <ul class="infra-features">
               <li>✓ Full-Sized Cricket & Football Ground</li>
-              <li>✓ Indoor Badminton & Table Tennis Arena</li>
+              <li>✓ Indoor Badminton & Table Tennis Arenas</li>
               <li>✓ Annual Khelotsav Sports Championship</li>
             </ul>
           </div>
         </article>
 
-        <!-- Facility 6: Cafeteria & Food Court -->
+        <!-- Facility 5: Cafeteria & Food Court -->
         <article class="infra-card">
           <div>
             <div class="infra-icon">🍱</div>
@@ -253,7 +243,7 @@
           </div>
         </article>
 
-        <!-- Facility 7: Smart Classrooms -->
+        <!-- Facility 6: Smart Classrooms -->
         <article class="infra-card">
           <div>
             <div class="infra-icon">📺</div>
@@ -267,7 +257,7 @@
           </div>
         </article>
 
-        <!-- Facility 8: Wi-Fi Connected Campus -->
+        <!-- Facility 7: Wi-Fi Connected Campus -->
         <article class="infra-card">
           <div>
             <div class="infra-icon">📡</div>
@@ -300,5 +290,6 @@
         </div>
       </div>
     </footer>
+    <script src="/app.js"></script>
   </body>
 </html>

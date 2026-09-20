@@ -287,8 +287,8 @@
         "category": "Mega Fest",
         "dates": "Spring Semester 2026",
         "location": "VSICS Main Campus Auditorium & Sports Grounds",
-        "highlights": "Inter-college coding hackathon, web development challenge, e-sports gaming tournament (BGMI/Valorant), Western & Indian group dance, Battle of Bands, fashion runway, and management quiz.",
-        "cash_prizes": "Over Rs. 2.5 Lakhs in cash prizes & trophies."
+        "highlights": "Inter-college coding hackathon, web development challenge, e-sports gaming tournament (BGMI/Valorant), Western & Indian group dance, fashion runway, and management quiz.",
+        "awards": "Trophies and certificates for all winners & participants."
       },
       {
         "title": "CodeForge V2 - 24-Hour Web & AI Hackathon",
@@ -296,7 +296,7 @@
         "dates": "October 18 - 19, 2026",
         "location": "VSICS Advanced Computing Labs",
         "highlights": "Build real-world web apps and AI solutions with industry mentors from IBM and TCS.",
-        "cash_prizes": "Rs. 50,000 for top 3 winning teams + Internship offers."
+        "awards": "Winners trophy & certificates."
       },
       {
         "title": "Khelotsav 2026 - Annual Campus Sports Meet",
@@ -304,10 +304,10 @@
         "dates": "November 05 - 10, 2026",
         "location": "VSICS Sports Complex",
         "highlights": "Inter-departmental tournaments in Cricket, Football, Volleyball, Badminton, Table Tennis, Chess, and Athletics 100m/400m races.",
-        "cash_prizes": "Overall Champions Trophy & Best Athlete Medals."
+        "awards": "Overall Champions Trophy & Best Athlete Medals."
       },
       {
-        "title": "Aaghaaz 2026 - Freshers Welcome Gala",
+        "title": "Freshers Party 2026 - Grand Freshers Welcome Party",
         "category": "Cultural & Fests",
         "dates": "September 25, 2026",
         "location": "VSICS Open Air Theatre",

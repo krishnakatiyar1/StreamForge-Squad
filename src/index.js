@@ -252,6 +252,37 @@ async function api(request, response, pathname) {
   return sendJson(response, 404, { error: "API route not found." });
 }
 
+const mimeTypes = {
+  ".css": "text/css; charset=utf-8",
+  ".js": "application/javascript; charset=utf-8",
+  ".png": "image/png",
+  ".jpg": "image/jpeg",
+  ".jpeg": "image/jpeg",
+  ".gif": "image/gif",
+  ".svg": "image/svg+xml",
+  ".pdf": "application/pdf",
+  ".json": "application/json; charset=utf-8",
+  ".ico": "image/x-icon",
+  ".html": "text/html; charset=utf-8"
+};
+
+async function serveStaticFile(response, pathname) {
+  const ext = path.extname(pathname).toLowerCase();
+  if (!ext) return false;
+  const contentType = mimeTypes[ext] || "application/octet-stream";
+  const safeRelativePath = path.normalize(pathname).replace(/^(\.\.[\/\\])+/, '');
+  const filePath = path.join(publicDirectory, safeRelativePath);
+  if (!filePath.startsWith(publicDirectory)) return false;
+  try {
+    const data = await fs.readFile(filePath);
+    response.writeHead(200, { "Content-Type": contentType, "X-Content-Type-Options": "nosniff" });
+    response.end(data);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 async function requestHandler(request, response) {
   try {
     const url = new URL(request.url, `http://${request.headers.host || "localhost"}`);
@@ -267,6 +298,7 @@ async function requestHandler(request, response) {
       return response.end();
     }
     if (pageRoutes[pathname]) return await sendFile(response, pageRoutes[pathname], "text/html; charset=utf-8");
+    if (await serveStaticFile(response, pathname)) return;
     if (publicFiles[pathname]) return await sendFile(response, ...publicFiles[pathname]);
     return sendJson(response, 404, { error: "Not found." });
   } catch (error) {
