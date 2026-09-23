@@ -85,8 +85,8 @@ streamforge-squad/
 | `MONGO_URI` | MongoDB connection string                     | Yes      |
 | `PORT`      | Port the server listens on (default: `3000`)  | No       |
 | `NODE_ENV`  | Set to `production` to enable secure cookies  | No       |
-| `GROQ_API_KEY` | Groq API key used only by the server for Campus AI | Yes, for AI |
-| `GROQ_MODEL` | Groq model for Campus AI (defaults to `openai/gpt-oss-20b`) | No |
+| Gemini_API_KEY | replace-with-your-gemini-api-key | Yes, for AI |
+| `Gemini_MODEL` | default model(gemini-3.7-flash) | No |
 
 ## Campus AI knowledge base
 
